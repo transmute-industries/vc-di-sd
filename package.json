@@ -1,5 +1,5 @@
 {
-  "name": "@transmute-industries/vc-di-sd",
+  "name": "@transmute/vc-di-sd",
   "version": "0.0.0",
   "description": "Experimental",
   "main": "./dist/index.js",
