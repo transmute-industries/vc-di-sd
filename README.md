@@ -54,23 +54,23 @@ const canonicalization = 'urdna2015'
 const k = await sd.jose.controller.key.generate(alg)
 const signer = await sd.jose.controller.signer(k.privateKeyJwk)
 const verifier = await sd.jose.controller.verifier(k.publicKeyJwk)
-const protectedDocument = await sd.jose.sign({
+const credential = await sd.jose.sign({
   signer,
   document: exampleVerifiableCredential,
   mandatoryPointers: ['/credentialSubject/driverLicense/issuingAuthority'],
   canonicalization,
   documentLoader,
 })
-const presentedDocument = await sd.jose.present({
+const presentation = await sd.jose.present({
   verifier,
-  document: protectedDocument,
+  document: credential,
   selectivePointers: ['/credentialSubject/driverLicense/dateOfBirth'],
   canonicalization,
   documentLoader,
 })
-const presentation = await sd.jose.verify({
+const verification = await sd.jose.verify({
   verifier,
-  document: presentedDocument,
+  document: presentation,
   canonicalization,
   documentLoader,
 })
