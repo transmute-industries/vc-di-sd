@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "@protected": true,
+    "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+    "DriverLicense": {
+      "@id": "urn:example:DriverLicense",
+      "@context": {
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "documentIdentifier": "urn:example:documentIdentifier",
+        "dateOfBirth": "urn:example:dateOfBirth",
+        "expirationDate": "urn:example:expiration",
+        "issuingAuthority": "urn:example:issuingAuthority"
+      }
+    },
+    "driverLicense": {
+      "@id": "urn:example:driverLicense",
+      "@type": "@id"
+    }
+  }
+}

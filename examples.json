@@ -1,0 +1,966 @@
+{
+  "ES256": {
+    "controller": {
+      "id": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMjU2IiwiYWxnIjoiRVMyNTYiLCJ4IjoiTmlwYlBVM1hqZzMyME41WVRMcnhJbGZIMjV2Y3BEWVZiUVE2amd4NnNxdyIsInkiOiJ1SnhwYk4xM1lJR184dXpwaXE4eVVDNXA0VElXNHU4MUJva0FtZ1dLM2dZIn0#0",
+      "type": "JsonWebKey",
+      "controller": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMjU2IiwiYWxnIjoiRVMyNTYiLCJ4IjoiTmlwYlBVM1hqZzMyME41WVRMcnhJbGZIMjV2Y3BEWVZiUVE2amd4NnNxdyIsInkiOiJ1SnhwYk4xM1lJR184dXpwaXE4eVVDNXA0VElXNHU4MUJva0FtZ1dLM2dZIn0",
+      "publicKeyJwk": {
+        "kty": "EC",
+        "crv": "P-256",
+        "alg": "ES256",
+        "x": "NipbPU3Xjg320N5YTLrxIlfH25vcpDYVbQQ6jgx6sqw",
+        "y": "uJxpbN13YIG_8uzpiq8yUC5p4TIW4u81BokAmgWK3gY"
+      },
+      "privateKeyJwk": {
+        "kty": "EC",
+        "crv": "P-256",
+        "alg": "ES256",
+        "x": "NipbPU3Xjg320N5YTLrxIlfH25vcpDYVbQQ6jgx6sqw",
+        "y": "uJxpbN13YIG_8uzpiq8yUC5p4TIW4u81BokAmgWK3gY",
+        "d": "RTBirq-mVgovvucwSmpmiELUBWfrx0rLwPxQcai9zfI"
+      }
+    },
+    "credential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://www.txdmv.gov/credentials/v1",
+        "https://w3id.org/security/data-integrity/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "DriverLicenseCredential"
+      ],
+      "issuer": "did:web:txdmv.gov",
+      "issuanceDate": "2010-01-01T19:23:24Z",
+      "credentialSubject": {
+        "driverLicense": {
+          "type": "DriverLicense",
+          "documentIdentifier": "T21387yc328c7y32h23f23",
+          "dateOfBirth": "01-01-1990",
+          "expirationDate": "01-01-2030",
+          "issuingAuthority": "TX"
+        }
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-06-04T22:30:30.158Z",
+        "cryptosuite": "di-sd-urdna2015-jose-2042",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "keys": [
+          {
+            "kid": "#disclosure",
+            "kty": "OKP",
+            "crv": "Ed25519",
+            "alg": "EdDSA",
+            "x": "MuY0p483ssi6VUpJ0UGOLOSxX1WkE_niTNA_NxujJM0",
+            "claimset_formats_supported": [
+              "w3cvc-jsonld"
+            ],
+            "claimset_claims_supported": [
+              "/credentialSubject/driverLicense/issuingAuthority"
+            ]
+          },
+          {
+            "kid": "#hmac",
+            "kty": "oct",
+            "alg": "HS256",
+            "use": "sig",
+            "key_ops": [
+              "sign"
+            ],
+            "k": "Wov8MHAMTOe19Sut5SW4WIhn4CiYHvt6UBLRUXphgwM"
+          },
+          {
+            "kid": "#mandatory",
+            "kty": "oct",
+            "k": "PfdiDeKASoFqQZPRhOcIyOt29QEdGRuOKRYBZQ688FA"
+          },
+          {
+            "kid": "#proof",
+            "kty": "oct",
+            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+          }
+        ],
+        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i2uN5hg30piImDm4wBtbroKA_kb65hmvN0UkC011fMnfOaP8fwYwhbzkpx3WIyNeFjab5lVc6bhngDmv8Jr0CQ",
+        "signatures": [
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iTjVivx71jIyfvtxDuSfzsolPnE24yIt6sObkbLNpJ9Da05rbvFpam_SGmJg88AvvZvrVNCsZyC7Lt1l3v3vDA",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..v7SzkV927X5gCHRITCBWFROcFk2bllzi3rRBWvkg4Xe6GcYcSen-mOL5uhAoW2l-lmds9VMu-y5n-nTSrug6Cw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..36tuhC6QLr62hPze-8Ybb5HuZDbt4hz49ufl4R2JEVaOgXKeQ12xTLy3gHB5TcrpGllHbUbu7VhyrHn4GVNcDw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..NK-_WVCVJrMVZXL9rDq7FmfcyPzhFZ14vwgYaN49DmKxNoXR5SiOxW9nMsWPKPMKYolO3A5V94YGxNVThEeoAA",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rn-UmsmkvaO6nI8coqrzHAQVbBCzRYVjLpyYc14DCZPHfhCvrse27tDNYFEhZlOPmwE3H6I6W7eEBUB7DGuvAQ"
+        ]
+      }
+    },
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://www.txdmv.gov/credentials/v1",
+        "https://w3id.org/security/data-integrity/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "DriverLicenseCredential"
+      ],
+      "credentialSubject": {
+        "driverLicense": {
+          "type": "DriverLicense",
+          "dateOfBirth": "01-01-1990",
+          "issuingAuthority": "TX"
+        }
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-06-04T22:30:30.158Z",
+        "cryptosuite": "di-sd-urdna2015-jose-2042",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "keys": [
+          {
+            "kid": "#disclosure",
+            "kty": "EC",
+            "crv": "P-256",
+            "alg": "ES256",
+            "x": "dH0Vl6wCebLS4LOxSFlpwEO5g3_6pqsbrDQGCYyCTL8",
+            "y": "2kShdqbr3ym9UzNkj2U_G1Rj4aeLnmuuivNCwHAJiek",
+            "claimset_formats_supported": [
+              "w3cvc-jsonld"
+            ],
+            "claimset_claims_supported": [
+              "/credentialSubject/driverLicense/issuingAuthority"
+            ]
+          },
+          {
+            "kid": "#hmac",
+            "kty": "oct",
+            "alg": "HS256",
+            "use": "sig",
+            "key_ops": [
+              "sign"
+            ],
+            "k": "dNx_AFoj-3scquubHF2-ahAsAg5tNuUtbQ2bLXhDt34"
+          },
+          {
+            "kid": "#mandatory",
+            "kty": "oct",
+            "k": "oXXfibKRKb5lZlyXlTobcHUD3EBlaTdv6kwQt4mO-LA"
+          },
+          {
+            "kid": "#proof",
+            "kty": "oct",
+            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+          }
+        ],
+        "signature": "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..f-cA-eXmdaSZdNIgSCcJ-QvAHtOdixUZ6uDDgQjU6KCFbTKAo5T_k2xEei3YGO-XdnpvRxQdepPF8-1jbDZoZw",
+        "signatures": [
+          "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..m50yLHNXT9KgN5OnnJvS6sxHpVHxUeaforn8VvOkW-iA5dxNb29q2XJ0JVS73Y98SuA8C2eYbdbQBVbC-uOJ5A"
+        ],
+        "labels": {
+          "c14n0": "uI4ixJ5_tNfouaM5r5v-0lQ_A7UO1FRnX1rDaHnz-_xE",
+          "c14n1": "uAAuhXleFJPvBkom9etB8hmJ5PQkaLvCnJ_Ke1MWU1NI",
+          "c14n2": "u47eHX_fCrrY75gU6r0GmuH8v4OY1v36v9bfjzEnbOUc"
+        },
+        "mandatoryIndexes": [
+          "0",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      }
+    },
+    "verification": {
+      "verified": true,
+      "document": {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://www.txdmv.gov/credentials/v1",
+          "https://w3id.org/security/data-integrity/v1"
+        ],
+        "type": [
+          "VerifiableCredential",
+          "DriverLicenseCredential"
+        ],
+        "credentialSubject": {
+          "driverLicense": {
+            "type": "DriverLicense",
+            "dateOfBirth": "01-01-1990",
+            "issuingAuthority": "TX"
+          }
+        }
+      }
+    }
+  },
+  "ES384": {
+    "controller": {
+      "id": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMzg0IiwiYWxnIjoiRVMzODQiLCJ4IjoiODBjUXUtVWRWUklqRTBETHlqMGUwMUViMDVyRExTRTdrLXJ6MUFMVlZxcHJobHdyLVJfdmZ1RkphdlNjNUQ4NCIsInkiOiJzLUNGQWx3VzZjZm4wdDRrengwc1dSR3NZUDZhNXM1S3FLVXBBczZnNEthUG85NUJITzFEYlRtd3dtcDdiTFdGIn0#0",
+      "type": "JsonWebKey",
+      "controller": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMzg0IiwiYWxnIjoiRVMzODQiLCJ4IjoiODBjUXUtVWRWUklqRTBETHlqMGUwMUViMDVyRExTRTdrLXJ6MUFMVlZxcHJobHdyLVJfdmZ1RkphdlNjNUQ4NCIsInkiOiJzLUNGQWx3VzZjZm4wdDRrengwc1dSR3NZUDZhNXM1S3FLVXBBczZnNEthUG85NUJITzFEYlRtd3dtcDdiTFdGIn0",
+      "publicKeyJwk": {
+        "kty": "EC",
+        "crv": "P-384",
+        "alg": "ES384",
+        "x": "80cQu-UdVRIjE0DLyj0e01Eb05rDLSE7k-rz1ALVVqprhlwr-R_vfuFJavSc5D84",
+        "y": "s-CFAlwW6cfn0t4kzx0sWRGsYP6a5s5KqKUpAs6g4KaPo95BHO1DbTmwwmp7bLWF"
+      },
+      "privateKeyJwk": {
+        "kty": "EC",
+        "crv": "P-384",
+        "alg": "ES384",
+        "x": "80cQu-UdVRIjE0DLyj0e01Eb05rDLSE7k-rz1ALVVqprhlwr-R_vfuFJavSc5D84",
+        "y": "s-CFAlwW6cfn0t4kzx0sWRGsYP6a5s5KqKUpAs6g4KaPo95BHO1DbTmwwmp7bLWF",
+        "d": "tMSN9ptc_5iX5amZU3gIsRTmyYCvDQbRyvSjbq4WDH1o5KGIrR5DERKuZ4_BKWSv"
+      }
+    },
+    "credential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://www.txdmv.gov/credentials/v1",
+        "https://w3id.org/security/data-integrity/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "DriverLicenseCredential"
+      ],
+      "issuer": "did:web:txdmv.gov",
+      "issuanceDate": "2010-01-01T19:23:24Z",
+      "credentialSubject": {
+        "driverLicense": {
+          "type": "DriverLicense",
+          "documentIdentifier": "T21387yc328c7y32h23f23",
+          "dateOfBirth": "01-01-1990",
+          "expirationDate": "01-01-2030",
+          "issuingAuthority": "TX"
+        }
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-06-04T22:30:30.158Z",
+        "cryptosuite": "di-sd-urdna2015-jose-2042",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "keys": [
+          {
+            "kid": "#disclosure",
+            "kty": "OKP",
+            "crv": "Ed25519",
+            "alg": "EdDSA",
+            "x": "MuY0p483ssi6VUpJ0UGOLOSxX1WkE_niTNA_NxujJM0",
+            "claimset_formats_supported": [
+              "w3cvc-jsonld"
+            ],
+            "claimset_claims_supported": [
+              "/credentialSubject/driverLicense/issuingAuthority"
+            ]
+          },
+          {
+            "kid": "#hmac",
+            "kty": "oct",
+            "alg": "HS256",
+            "use": "sig",
+            "key_ops": [
+              "sign"
+            ],
+            "k": "Wov8MHAMTOe19Sut5SW4WIhn4CiYHvt6UBLRUXphgwM"
+          },
+          {
+            "kid": "#mandatory",
+            "kty": "oct",
+            "k": "PfdiDeKASoFqQZPRhOcIyOt29QEdGRuOKRYBZQ688FA"
+          },
+          {
+            "kid": "#proof",
+            "kty": "oct",
+            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+          }
+        ],
+        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i2uN5hg30piImDm4wBtbroKA_kb65hmvN0UkC011fMnfOaP8fwYwhbzkpx3WIyNeFjab5lVc6bhngDmv8Jr0CQ",
+        "signatures": [
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iTjVivx71jIyfvtxDuSfzsolPnE24yIt6sObkbLNpJ9Da05rbvFpam_SGmJg88AvvZvrVNCsZyC7Lt1l3v3vDA",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..v7SzkV927X5gCHRITCBWFROcFk2bllzi3rRBWvkg4Xe6GcYcSen-mOL5uhAoW2l-lmds9VMu-y5n-nTSrug6Cw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..36tuhC6QLr62hPze-8Ybb5HuZDbt4hz49ufl4R2JEVaOgXKeQ12xTLy3gHB5TcrpGllHbUbu7VhyrHn4GVNcDw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..NK-_WVCVJrMVZXL9rDq7FmfcyPzhFZ14vwgYaN49DmKxNoXR5SiOxW9nMsWPKPMKYolO3A5V94YGxNVThEeoAA",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rn-UmsmkvaO6nI8coqrzHAQVbBCzRYVjLpyYc14DCZPHfhCvrse27tDNYFEhZlOPmwE3H6I6W7eEBUB7DGuvAQ"
+        ]
+      }
+    },
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://www.txdmv.gov/credentials/v1",
+        "https://w3id.org/security/data-integrity/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "DriverLicenseCredential"
+      ],
+      "credentialSubject": {
+        "driverLicense": {
+          "type": "DriverLicense",
+          "dateOfBirth": "01-01-1990",
+          "issuingAuthority": "TX"
+        }
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-06-04T22:30:30.158Z",
+        "cryptosuite": "di-sd-urdna2015-jose-2042",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "keys": [
+          {
+            "kid": "#disclosure",
+            "kty": "EC",
+            "crv": "P-384",
+            "alg": "ES384",
+            "x": "WzaIy-vRmy8-Mqjpq8RLsoO_xZPjcRtqF-S7_bXYQcQ6fYVkrDtAHkWwv2DVMyJx",
+            "y": "oY9-BMk0BL2PAVDFX3Mx8BiRFEW_q-U_qe-yYzDxuXu_7TU-q8Usti8mPx4tYTMx",
+            "claimset_formats_supported": [
+              "w3cvc-jsonld"
+            ],
+            "claimset_claims_supported": [
+              "/credentialSubject/driverLicense/issuingAuthority"
+            ]
+          },
+          {
+            "kid": "#hmac",
+            "kty": "oct",
+            "alg": "HS256",
+            "use": "sig",
+            "key_ops": [
+              "sign"
+            ],
+            "k": "d0GjdXqGlSWtBCUAdyWQJ4meZEDNFQO0OVCiddn67yY"
+          },
+          {
+            "kid": "#mandatory",
+            "kty": "oct",
+            "k": "4tFivTCjZoddEBCL6Wt6cUHQ_VQgiSQPHgpj0j0W3tU"
+          },
+          {
+            "kid": "#proof",
+            "kty": "oct",
+            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+          }
+        ],
+        "signature": "eyJhbGciOiJFUzM4NCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..HC_ZcFiIqqTsdQRIzdbrVz3k8eoeFvDZXH26TbbN4OcocO78pc2z1uwBYs1G7tqR7GeMgzuQKhAjvXyQi7vxtreBJw_r-OF4JyFaAR2Y9-eLYxPVmDRTq6QaeJCMNXpt",
+        "signatures": [
+          "eyJhbGciOiJFUzM4NCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..IZ72t62Vd3NVUGremIH0-7_DHqBVR2nzQ8Clwfgb6XfGM-C7Wy8HuN05xdgAad76sTF4cSbaYItqY10kZJxVF7yO-UnGSEIQOHcjuwTnhvy2V7M_BmQ8mHgqrsOysM3l"
+        ],
+        "labels": {
+          "c14n0": "uHS9LGgxx-SlW_q8QXa-fBI4p7T7YLMNleAoLkw5eR_o",
+          "c14n1": "uKNIUql47qsb4A0m9Je-uUx9naLlYY_Dy6XYtswDrxh4",
+          "c14n2": "uzgu_x7II7zsEJQVgSjkcwdm2iO5IU_u3FkNCp7yarxc"
+        },
+        "mandatoryIndexes": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "6"
+        ]
+      }
+    },
+    "verification": {
+      "verified": true,
+      "document": {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://www.txdmv.gov/credentials/v1",
+          "https://w3id.org/security/data-integrity/v1"
+        ],
+        "type": [
+          "VerifiableCredential",
+          "DriverLicenseCredential"
+        ],
+        "credentialSubject": {
+          "driverLicense": {
+            "type": "DriverLicense",
+            "dateOfBirth": "01-01-1990",
+            "issuingAuthority": "TX"
+          }
+        }
+      }
+    }
+  },
+  "RS256": {
+    "controller": {
+      "id": "did:jwk:eyJrdHkiOiJSU0EiLCJhbGciOiJSUzI1NiIsIm4iOiJwZ2VURm5scHNsbGVkYVAxNFRBeU5ucGF0Ql80Vkh4MUpsbnM5cjVNZ3dKYjVOQmRmNDZnVjJyVWtYblUwS2ZPMzZWbWNORlM2aEFRU0tiejZkYlAyU1luRzlYdm1kdkF1Zkg2NDJYY0xEMWo5UlphTGNOOGtZQUxZZWpYc0l6Ri1yZFNMMFRYQmM5ZzJXSWN4bmVKQTBCdXpTUzhPSDJXZ3FVMjRVV3JTNEpzWVl3Y2NWN2ZROG1leTVSay04cGRUTDFsWWY1UTduOGdvaDYycUVvbGdPMHM4OXBsSlpTUXZQWG9zUXBaakJ1bDJGOUY2NXZ6ZzJrV3hYNktVU3R6WFBwN045Tnd1QzlSeXNWSmlIN2lFTTdYMEd3QXdaSm5iTU5YZ25XYldaYlFNMi1Jb2JVMEhGbGNBdnBoOTJBVlNScjVsdWhhZWtwdEVnRU5fUUNYOHciLCJlIjoiQVFBQiJ9#0",
+      "type": "JsonWebKey",
+      "controller": "did:jwk:eyJrdHkiOiJSU0EiLCJhbGciOiJSUzI1NiIsIm4iOiJwZ2VURm5scHNsbGVkYVAxNFRBeU5ucGF0Ql80Vkh4MUpsbnM5cjVNZ3dKYjVOQmRmNDZnVjJyVWtYblUwS2ZPMzZWbWNORlM2aEFRU0tiejZkYlAyU1luRzlYdm1kdkF1Zkg2NDJYY0xEMWo5UlphTGNOOGtZQUxZZWpYc0l6Ri1yZFNMMFRYQmM5ZzJXSWN4bmVKQTBCdXpTUzhPSDJXZ3FVMjRVV3JTNEpzWVl3Y2NWN2ZROG1leTVSay04cGRUTDFsWWY1UTduOGdvaDYycUVvbGdPMHM4OXBsSlpTUXZQWG9zUXBaakJ1bDJGOUY2NXZ6ZzJrV3hYNktVU3R6WFBwN045Tnd1QzlSeXNWSmlIN2lFTTdYMEd3QXdaSm5iTU5YZ25XYldaYlFNMi1Jb2JVMEhGbGNBdnBoOTJBVlNScjVsdWhhZWtwdEVnRU5fUUNYOHciLCJlIjoiQVFBQiJ9",
+      "publicKeyJwk": {
+        "kty": "RSA",
+        "alg": "RS256",
+        "n": "pgeTFnlpslledaP14TAyNnpatB_4VHx1Jlns9r5MgwJb5NBdf46gV2rUkXnU0KfO36VmcNFS6hAQSKbz6dbP2SYnG9XvmdvAufH642XcLD1j9RZaLcN8kYALYejXsIzF-rdSL0TXBc9g2WIcxneJA0BuzSS8OH2WgqU24UWrS4JsYYwccV7fQ8mey5Rk-8pdTL1lYf5Q7n8goh62qEolgO0s89plJZSQvPXosQpZjBul2F9F65vzg2kWxX6KUStzXPp7N9NwuC9RysVJiH7iEM7X0GwAwZJnbMNXgnWbWZbQM2-IobU0HFlcAvph92AVSRr5luhaekptEgEN_QCX8w",
+        "e": "AQAB"
+      },
+      "privateKeyJwk": {
+        "kty": "RSA",
+        "alg": "RS256",
+        "d": "Koe-Mf-gB8PE4rXBgpHqCvKE0adu4ZWQHObkQMC2sMil6ZNGoCpVAI-pLCrdTSXvZHLmLvgwGS1MPpAl4zzXuXSAiCzhV7RnRjqqXh31rI99T4cOSrLM8iiuwcH3no4xGOxk7R7hRee9k3IClQSB4Idc2sgSPxZMu-K-kC5cltbDytsJDdSGnKm5rCElspjGp9txfH1gj_dM6E0GbEyFTKgBXH-QCpQbOQeY-HckI7JQZqgE9ENjPSQysVMlz1SDWQDbPYihpBq_9G5hXkHq8OMr9nzzon_7puD1gUNktrGZWZwOkldjrtlt77akppBDwybkUHTIzgVxs1Vg3tqooQ",
+        "n": "pgeTFnlpslledaP14TAyNnpatB_4VHx1Jlns9r5MgwJb5NBdf46gV2rUkXnU0KfO36VmcNFS6hAQSKbz6dbP2SYnG9XvmdvAufH642XcLD1j9RZaLcN8kYALYejXsIzF-rdSL0TXBc9g2WIcxneJA0BuzSS8OH2WgqU24UWrS4JsYYwccV7fQ8mey5Rk-8pdTL1lYf5Q7n8goh62qEolgO0s89plJZSQvPXosQpZjBul2F9F65vzg2kWxX6KUStzXPp7N9NwuC9RysVJiH7iEM7X0GwAwZJnbMNXgnWbWZbQM2-IobU0HFlcAvph92AVSRr5luhaekptEgEN_QCX8w",
+        "e": "AQAB",
+        "p": "uEx9-2im0p7peql9O-ghz6UBwbVQps7YMXP9Z24Ibf3UcYVgfwRZEM6j-o0oilOkqljTP27R59N4aIqvxb-_9F3aFG_Bfh8hzRMuzXKFdEffwfOuJpOEqLVcYAljj3KvQEFyCMxZGH5FjsGg8worloCwjt1i0DzFjPjyqFhebF0",
+        "q": "5p-Iq9j--x69hVUZ4J4U3PC2jmNRTPZcI9NmULt2VPxWL3Argsu2vr1MGukE7xQDRYhS8GcRyNPgF5uE6jnLV0Pdqw9_keh2rK6V-CRRu5KtIsSiXyjQWanaD2kTa1QsjEwuiY5kQB6zaovgp-DesxC3ZuRS9INydXcQppmpUI8",
+        "dp": "O5ENjvqOILkYAXtSbNBkTTap0LAHt0JXgfRZTNq1gsdtqJtRSvxexR3kxhBlr__E0wIOlQv-cA1bd36LvUByjErhN4W_ZkItrJisod6H38NzQL6_5Nv9HoIvryKZuT16Ayyj7NAPY-k8Fh3jJWp-GBDT__jx_RgHSb8UvvCA5Ek",
+        "dq": "fu0Mhi_eXY0Ul1436MR4DQU6I_GLXEU2fs0pQYN649khAejFOa4ufJmoWiMnAQHNryYRJ5hCVHovmi6Qn2yBehyy0iOsfTwonG9VwIUUqpxWR41bI-5NhRuTFOoqsuZXwjtnXXONvzBmZFxpn1uGlZy8o5dEBKiXhQirlFV7twc",
+        "qi": "SRRDSD38Nx2adDqp5dlkayq85RbNUoJKdugUE949QLsy8twguKHNszCaMVamNWvicfVm_2VGtWnRr6bvbkAOSLYkZRqbipJwsQomm3JLK6h1xs39KheaBHDVgVMeA3fsAyrJ2QJDwftAhpusTXMvLVC0nAGHQL-YYqMcdGD09g"
+      }
+    },
+    "credential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://www.txdmv.gov/credentials/v1",
+        "https://w3id.org/security/data-integrity/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "DriverLicenseCredential"
+      ],
+      "issuer": "did:web:txdmv.gov",
+      "issuanceDate": "2010-01-01T19:23:24Z",
+      "credentialSubject": {
+        "driverLicense": {
+          "type": "DriverLicense",
+          "documentIdentifier": "T21387yc328c7y32h23f23",
+          "dateOfBirth": "01-01-1990",
+          "expirationDate": "01-01-2030",
+          "issuingAuthority": "TX"
+        }
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-06-04T22:30:30.158Z",
+        "cryptosuite": "di-sd-urdna2015-jose-2042",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "keys": [
+          {
+            "kid": "#disclosure",
+            "kty": "OKP",
+            "crv": "Ed25519",
+            "alg": "EdDSA",
+            "x": "MuY0p483ssi6VUpJ0UGOLOSxX1WkE_niTNA_NxujJM0",
+            "claimset_formats_supported": [
+              "w3cvc-jsonld"
+            ],
+            "claimset_claims_supported": [
+              "/credentialSubject/driverLicense/issuingAuthority"
+            ]
+          },
+          {
+            "kid": "#hmac",
+            "kty": "oct",
+            "alg": "HS256",
+            "use": "sig",
+            "key_ops": [
+              "sign"
+            ],
+            "k": "Wov8MHAMTOe19Sut5SW4WIhn4CiYHvt6UBLRUXphgwM"
+          },
+          {
+            "kid": "#mandatory",
+            "kty": "oct",
+            "k": "PfdiDeKASoFqQZPRhOcIyOt29QEdGRuOKRYBZQ688FA"
+          },
+          {
+            "kid": "#proof",
+            "kty": "oct",
+            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+          }
+        ],
+        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i2uN5hg30piImDm4wBtbroKA_kb65hmvN0UkC011fMnfOaP8fwYwhbzkpx3WIyNeFjab5lVc6bhngDmv8Jr0CQ",
+        "signatures": [
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iTjVivx71jIyfvtxDuSfzsolPnE24yIt6sObkbLNpJ9Da05rbvFpam_SGmJg88AvvZvrVNCsZyC7Lt1l3v3vDA",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..v7SzkV927X5gCHRITCBWFROcFk2bllzi3rRBWvkg4Xe6GcYcSen-mOL5uhAoW2l-lmds9VMu-y5n-nTSrug6Cw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..36tuhC6QLr62hPze-8Ybb5HuZDbt4hz49ufl4R2JEVaOgXKeQ12xTLy3gHB5TcrpGllHbUbu7VhyrHn4GVNcDw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..NK-_WVCVJrMVZXL9rDq7FmfcyPzhFZ14vwgYaN49DmKxNoXR5SiOxW9nMsWPKPMKYolO3A5V94YGxNVThEeoAA",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rn-UmsmkvaO6nI8coqrzHAQVbBCzRYVjLpyYc14DCZPHfhCvrse27tDNYFEhZlOPmwE3H6I6W7eEBUB7DGuvAQ"
+        ]
+      }
+    },
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://www.txdmv.gov/credentials/v1",
+        "https://w3id.org/security/data-integrity/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "DriverLicenseCredential"
+      ],
+      "credentialSubject": {
+        "driverLicense": {
+          "type": "DriverLicense",
+          "dateOfBirth": "01-01-1990",
+          "issuingAuthority": "TX"
+        }
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-06-04T22:30:30.158Z",
+        "cryptosuite": "di-sd-urdna2015-jose-2042",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "keys": [
+          {
+            "kid": "#disclosure",
+            "kty": "RSA",
+            "alg": "RS256",
+            "n": "mBtufnwO-WEdvhLEm4g1IIG9YYaFnt61_BVduaUPk5Pc8r6epAgP7HcYbnUqGz63gA__Ls6uzIEk3NCPczRk_pZGpX8IOo52ACpskAipQ-HU3-VJpNe5l0vuZHoNpxuFODOtbOP-gk1g_wk7H5CD6uupz6qoMsjje2PZ9YF8Uq8zOQ43aTtl0MXKBHJJeJbRniOG_l3ITrwphyP3DNHFfxKaZJxyep6RXNhXODxCFUNU3V7gRzxr7x96BRIr9FERn2ROwjPXa3b_PYHWkm3wXtwUyGXskvdb1DR20Vvfnwi4fj9FLKU1WNfOrQxdRfS2xA8Xb_X5KsNLS6L3K3ybnw",
+            "e": "AQAB",
+            "claimset_formats_supported": [
+              "w3cvc-jsonld"
+            ],
+            "claimset_claims_supported": [
+              "/credentialSubject/driverLicense/issuingAuthority"
+            ]
+          },
+          {
+            "kid": "#hmac",
+            "kty": "oct",
+            "alg": "HS256",
+            "use": "sig",
+            "key_ops": [
+              "sign"
+            ],
+            "k": "mDkx5pxFVEl3GOp8pTFDO8nTgwYjdG9G-zl8CS-tk1g"
+          },
+          {
+            "kid": "#mandatory",
+            "kty": "oct",
+            "k": "mEinjUL7-pUFqvErx6Z2uK6wpbWSRb8ddPVweqVQ1xg"
+          },
+          {
+            "kid": "#proof",
+            "kty": "oct",
+            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+          }
+        ],
+        "signature": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..pMfKPyOcrs1xLtL7bdIEdPQNHuZh4KK6DbtOBPK3GRJdihPEfFdznyf_qcjDE9VdH3NF0tdiXDxiISxFdCANMmgjuBKEuQIw9MsHi-fqcZ297bVs3pDSslq3ZCUehfdmnMyFR7P4fH8dF0LUV5cNz-jkPkGjthKXSze2VFkrzPoIeRmG2s0xgNl5htpJZzXn9V9u37iVn7PzhlqVqJgIraVorYq69mvrM9S6NnzdSfE8urUHZGPMm4ULqNeVepvMV6sH0AQiKd5u52X5lXbLOVBxYufN1zuCetqC_48Jym2MXLEa3A04Xad7eZq92HoKM8vNejGGlLTMk8byyk_4xw",
+        "signatures": [
+          "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Dz1q78CfSa7UqCbz9CHefpYhfM1Ou_emV2L0S3O3A_TBbVtFK0t4Ojqz7vDa2q7P3gRjP1lFceaIQ7sMygvqfDYSOgM8J74TqXvLmBsVxjQEszbQtTCTkLK05qQnxS47H_Yzp72YZ1pXWghI1cuRNh-3GHo4Xdj-O_Xo_LkkUvmvuQmEl7ATJv3ByVeEwFkh2R_61ivIKaioudVEoufatlI-rQepMBcu0PT8HE3xgjHJcbwM1x8b9WHNsMljw7qmUPLgW34Vp5tRkkJqHcmm5zTbTlO__7m4y-7Zq792P2fEYb6TXZ9ntznYqJhHNn-isb_03Ii3hAhyvzPn_Ei5gA"
+        ],
+        "labels": {
+          "c14n0": "uOPyS0dfuBBzps2qKaddMnXJ7pjE8pY9fOR-f79-Ogdk",
+          "c14n1": "uD8xoGmjXtVDtBncKtqqPNlB5vD5RH7nPzzzBlqx2dFU",
+          "c14n2": "uXhl0gAj0sddsZJ6d0-IHKaNWTFODrg6yqm5VV-UqK4Q"
+        },
+        "mandatoryIndexes": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "6"
+        ]
+      }
+    },
+    "verification": {
+      "verified": true,
+      "document": {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://www.txdmv.gov/credentials/v1",
+          "https://w3id.org/security/data-integrity/v1"
+        ],
+        "type": [
+          "VerifiableCredential",
+          "DriverLicenseCredential"
+        ],
+        "credentialSubject": {
+          "driverLicense": {
+            "type": "DriverLicense",
+            "dateOfBirth": "01-01-1990",
+            "issuingAuthority": "TX"
+          }
+        }
+      }
+    }
+  },
+  "ES256K": {
+    "controller": {
+      "id": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6InNlY3AyNTZrMSIsImFsZyI6IkVTMjU2SyIsIngiOiIyZ0s3aDlLSnB6bXRhelBCSEhwV0gxRWhETDhaOGZmNDZnNE1xUTNkVmpJIiwieSI6IlN0X2J4VFVmM1R4bUU5M0UzZTJZVW10b2ZPTTNkclNpbHpGek1GdmR5cXcifQ#0",
+      "type": "JsonWebKey",
+      "controller": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6InNlY3AyNTZrMSIsImFsZyI6IkVTMjU2SyIsIngiOiIyZ0s3aDlLSnB6bXRhelBCSEhwV0gxRWhETDhaOGZmNDZnNE1xUTNkVmpJIiwieSI6IlN0X2J4VFVmM1R4bUU5M0UzZTJZVW10b2ZPTTNkclNpbHpGek1GdmR5cXcifQ",
+      "publicKeyJwk": {
+        "kty": "EC",
+        "crv": "secp256k1",
+        "alg": "ES256K",
+        "x": "2gK7h9KJpzmtazPBHHpWH1EhDL8Z8ff46g4MqQ3dVjI",
+        "y": "St_bxTUf3TxmE93E3e2YUmtofOM3drSilzFzMFvdyqw"
+      },
+      "privateKeyJwk": {
+        "kty": "EC",
+        "crv": "secp256k1",
+        "alg": "ES256K",
+        "x": "2gK7h9KJpzmtazPBHHpWH1EhDL8Z8ff46g4MqQ3dVjI",
+        "y": "St_bxTUf3TxmE93E3e2YUmtofOM3drSilzFzMFvdyqw",
+        "d": "ar92yOQO6lW566EDKy_J_pUi6Cm6rCQnqWWWCPTap74"
+      }
+    },
+    "credential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://www.txdmv.gov/credentials/v1",
+        "https://w3id.org/security/data-integrity/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "DriverLicenseCredential"
+      ],
+      "issuer": "did:web:txdmv.gov",
+      "issuanceDate": "2010-01-01T19:23:24Z",
+      "credentialSubject": {
+        "driverLicense": {
+          "type": "DriverLicense",
+          "documentIdentifier": "T21387yc328c7y32h23f23",
+          "dateOfBirth": "01-01-1990",
+          "expirationDate": "01-01-2030",
+          "issuingAuthority": "TX"
+        }
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-06-04T22:30:30.158Z",
+        "cryptosuite": "di-sd-urdna2015-jose-2042",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "keys": [
+          {
+            "kid": "#disclosure",
+            "kty": "OKP",
+            "crv": "Ed25519",
+            "alg": "EdDSA",
+            "x": "MuY0p483ssi6VUpJ0UGOLOSxX1WkE_niTNA_NxujJM0",
+            "claimset_formats_supported": [
+              "w3cvc-jsonld"
+            ],
+            "claimset_claims_supported": [
+              "/credentialSubject/driverLicense/issuingAuthority"
+            ]
+          },
+          {
+            "kid": "#hmac",
+            "kty": "oct",
+            "alg": "HS256",
+            "use": "sig",
+            "key_ops": [
+              "sign"
+            ],
+            "k": "Wov8MHAMTOe19Sut5SW4WIhn4CiYHvt6UBLRUXphgwM"
+          },
+          {
+            "kid": "#mandatory",
+            "kty": "oct",
+            "k": "PfdiDeKASoFqQZPRhOcIyOt29QEdGRuOKRYBZQ688FA"
+          },
+          {
+            "kid": "#proof",
+            "kty": "oct",
+            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+          }
+        ],
+        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i2uN5hg30piImDm4wBtbroKA_kb65hmvN0UkC011fMnfOaP8fwYwhbzkpx3WIyNeFjab5lVc6bhngDmv8Jr0CQ",
+        "signatures": [
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iTjVivx71jIyfvtxDuSfzsolPnE24yIt6sObkbLNpJ9Da05rbvFpam_SGmJg88AvvZvrVNCsZyC7Lt1l3v3vDA",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..v7SzkV927X5gCHRITCBWFROcFk2bllzi3rRBWvkg4Xe6GcYcSen-mOL5uhAoW2l-lmds9VMu-y5n-nTSrug6Cw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..36tuhC6QLr62hPze-8Ybb5HuZDbt4hz49ufl4R2JEVaOgXKeQ12xTLy3gHB5TcrpGllHbUbu7VhyrHn4GVNcDw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..NK-_WVCVJrMVZXL9rDq7FmfcyPzhFZ14vwgYaN49DmKxNoXR5SiOxW9nMsWPKPMKYolO3A5V94YGxNVThEeoAA",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rn-UmsmkvaO6nI8coqrzHAQVbBCzRYVjLpyYc14DCZPHfhCvrse27tDNYFEhZlOPmwE3H6I6W7eEBUB7DGuvAQ"
+        ]
+      }
+    },
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://www.txdmv.gov/credentials/v1",
+        "https://w3id.org/security/data-integrity/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "DriverLicenseCredential"
+      ],
+      "credentialSubject": {
+        "driverLicense": {
+          "type": "DriverLicense",
+          "dateOfBirth": "01-01-1990",
+          "issuingAuthority": "TX"
+        }
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-06-04T22:30:30.158Z",
+        "cryptosuite": "di-sd-urdna2015-jose-2042",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "keys": [
+          {
+            "kid": "#disclosure",
+            "kty": "EC",
+            "crv": "secp256k1",
+            "alg": "ES256K",
+            "x": "lSq2HlIK5iO_QszBHmH_22RHvJXg7yOaWnxI3ZNDRuU",
+            "y": "fFRkopZVwusP4f4GpoeYUj1Cmzyl13IaJfek5RedNS8",
+            "claimset_formats_supported": [
+              "w3cvc-jsonld"
+            ],
+            "claimset_claims_supported": [
+              "/credentialSubject/driverLicense/issuingAuthority"
+            ]
+          },
+          {
+            "kid": "#hmac",
+            "kty": "oct",
+            "alg": "HS256",
+            "use": "sig",
+            "key_ops": [
+              "sign"
+            ],
+            "k": "b5ZOZwS44-NkIIWbp9e6Zlpof4Yb8dc5FdOxo0GSfaI"
+          },
+          {
+            "kid": "#mandatory",
+            "kty": "oct",
+            "k": "HTS3_Nk8-lQlgqZ_LURH0ovhI0MsskQKe7h_4d-o6Hw"
+          },
+          {
+            "kid": "#proof",
+            "kty": "oct",
+            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+          }
+        ],
+        "signature": "eyJhbGciOiJFUzI1NksiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdfQ..5zjBhg4EUaQD3Zefa7-mvp-9zO9b3dmTK1Rcl4C183LDRN1Ugb-rT8RoDYYpAEnY44XPELpXs0p9Z7itD2dpLQ",
+        "signatures": [
+          "eyJhbGciOiJFUzI1NksiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdfQ..-0NX7i12Rj19kuYP_Jy1QnERQsHGlTd353v_flgCWtsRg8vM34DgeLC-3JbkrvrHVZwO7LW9YvdnOSQ_y3RI8w"
+        ],
+        "labels": {
+          "c14n0": "u7XJa2nY9OQpBAtyvUMnL1EeN0tqchlBpP4j9z7UHv_A",
+          "c14n1": "udv7STKmt2WgAjemyEV6gvZArusFhR-OxiCedGRvxup0",
+          "c14n2": "uJR5AUVJma-3PnoPyDs4p-mKmKJBc2F9fKlIW3Ev60cM"
+        },
+        "mandatoryIndexes": [
+          "0",
+          "1",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      }
+    },
+    "verification": {
+      "verified": true,
+      "document": {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://www.txdmv.gov/credentials/v1",
+          "https://w3id.org/security/data-integrity/v1"
+        ],
+        "type": [
+          "VerifiableCredential",
+          "DriverLicenseCredential"
+        ],
+        "credentialSubject": {
+          "driverLicense": {
+            "type": "DriverLicense",
+            "dateOfBirth": "01-01-1990",
+            "issuingAuthority": "TX"
+          }
+        }
+      }
+    }
+  },
+  "EdDSA": {
+    "controller": {
+      "id": "did:jwk:eyJrdHkiOiJPS1AiLCJjcnYiOiJFZDI1NTE5IiwiYWxnIjoiRWREU0EiLCJ4IjoicEREY2MySXZqcVI4Mmo2X3BXUGxWbTk4Rndrd2pKeUFQWVlKR2NNdVlldyJ9#0",
+      "type": "JsonWebKey",
+      "controller": "did:jwk:eyJrdHkiOiJPS1AiLCJjcnYiOiJFZDI1NTE5IiwiYWxnIjoiRWREU0EiLCJ4IjoicEREY2MySXZqcVI4Mmo2X3BXUGxWbTk4Rndrd2pKeUFQWVlKR2NNdVlldyJ9",
+      "publicKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "alg": "EdDSA",
+        "x": "pDDcc2IvjqR82j6_pWPlVm98FwkwjJyAPYYJGcMuYew"
+      },
+      "privateKeyJwk": {
+        "kty": "OKP",
+        "crv": "Ed25519",
+        "alg": "EdDSA",
+        "x": "pDDcc2IvjqR82j6_pWPlVm98FwkwjJyAPYYJGcMuYew",
+        "d": "Q_0aSerdY9LpvY-vej4z9V05M4VJEkOdoLujoUFizQ0"
+      }
+    },
+    "credential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://www.txdmv.gov/credentials/v1",
+        "https://w3id.org/security/data-integrity/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "DriverLicenseCredential"
+      ],
+      "issuer": "did:web:txdmv.gov",
+      "issuanceDate": "2010-01-01T19:23:24Z",
+      "credentialSubject": {
+        "driverLicense": {
+          "type": "DriverLicense",
+          "documentIdentifier": "T21387yc328c7y32h23f23",
+          "dateOfBirth": "01-01-1990",
+          "expirationDate": "01-01-2030",
+          "issuingAuthority": "TX"
+        }
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-06-04T22:30:30.158Z",
+        "cryptosuite": "di-sd-urdna2015-jose-2042",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "keys": [
+          {
+            "kid": "#disclosure",
+            "kty": "OKP",
+            "crv": "Ed25519",
+            "alg": "EdDSA",
+            "x": "MuY0p483ssi6VUpJ0UGOLOSxX1WkE_niTNA_NxujJM0",
+            "claimset_formats_supported": [
+              "w3cvc-jsonld"
+            ],
+            "claimset_claims_supported": [
+              "/credentialSubject/driverLicense/issuingAuthority"
+            ]
+          },
+          {
+            "kid": "#hmac",
+            "kty": "oct",
+            "alg": "HS256",
+            "use": "sig",
+            "key_ops": [
+              "sign"
+            ],
+            "k": "Wov8MHAMTOe19Sut5SW4WIhn4CiYHvt6UBLRUXphgwM"
+          },
+          {
+            "kid": "#mandatory",
+            "kty": "oct",
+            "k": "PfdiDeKASoFqQZPRhOcIyOt29QEdGRuOKRYBZQ688FA"
+          },
+          {
+            "kid": "#proof",
+            "kty": "oct",
+            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+          }
+        ],
+        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i2uN5hg30piImDm4wBtbroKA_kb65hmvN0UkC011fMnfOaP8fwYwhbzkpx3WIyNeFjab5lVc6bhngDmv8Jr0CQ",
+        "signatures": [
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iTjVivx71jIyfvtxDuSfzsolPnE24yIt6sObkbLNpJ9Da05rbvFpam_SGmJg88AvvZvrVNCsZyC7Lt1l3v3vDA",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..v7SzkV927X5gCHRITCBWFROcFk2bllzi3rRBWvkg4Xe6GcYcSen-mOL5uhAoW2l-lmds9VMu-y5n-nTSrug6Cw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..36tuhC6QLr62hPze-8Ybb5HuZDbt4hz49ufl4R2JEVaOgXKeQ12xTLy3gHB5TcrpGllHbUbu7VhyrHn4GVNcDw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..NK-_WVCVJrMVZXL9rDq7FmfcyPzhFZ14vwgYaN49DmKxNoXR5SiOxW9nMsWPKPMKYolO3A5V94YGxNVThEeoAA",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rn-UmsmkvaO6nI8coqrzHAQVbBCzRYVjLpyYc14DCZPHfhCvrse27tDNYFEhZlOPmwE3H6I6W7eEBUB7DGuvAQ"
+        ]
+      }
+    },
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://www.txdmv.gov/credentials/v1",
+        "https://w3id.org/security/data-integrity/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "DriverLicenseCredential"
+      ],
+      "credentialSubject": {
+        "driverLicense": {
+          "type": "DriverLicense",
+          "dateOfBirth": "01-01-1990",
+          "issuingAuthority": "TX"
+        }
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-06-04T22:30:30.158Z",
+        "cryptosuite": "di-sd-urdna2015-jose-2042",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "keys": [
+          {
+            "kid": "#disclosure",
+            "kty": "OKP",
+            "crv": "Ed25519",
+            "alg": "EdDSA",
+            "x": "MuY0p483ssi6VUpJ0UGOLOSxX1WkE_niTNA_NxujJM0",
+            "claimset_formats_supported": [
+              "w3cvc-jsonld"
+            ],
+            "claimset_claims_supported": [
+              "/credentialSubject/driverLicense/issuingAuthority"
+            ]
+          },
+          {
+            "kid": "#hmac",
+            "kty": "oct",
+            "alg": "HS256",
+            "use": "sig",
+            "key_ops": [
+              "sign"
+            ],
+            "k": "Wov8MHAMTOe19Sut5SW4WIhn4CiYHvt6UBLRUXphgwM"
+          },
+          {
+            "kid": "#mandatory",
+            "kty": "oct",
+            "k": "PfdiDeKASoFqQZPRhOcIyOt29QEdGRuOKRYBZQ688FA"
+          },
+          {
+            "kid": "#proof",
+            "kty": "oct",
+            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+          }
+        ],
+        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i2uN5hg30piImDm4wBtbroKA_kb65hmvN0UkC011fMnfOaP8fwYwhbzkpx3WIyNeFjab5lVc6bhngDmv8Jr0CQ",
+        "signatures": [
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iTjVivx71jIyfvtxDuSfzsolPnE24yIt6sObkbLNpJ9Da05rbvFpam_SGmJg88AvvZvrVNCsZyC7Lt1l3v3vDA"
+        ],
+        "labels": {
+          "c14n0": "uJ_EmFAOB748gyOMn3LnnT6BHALukXvoa3fJkzpjxNCQ",
+          "c14n1": "uqanpf6f8qnyEF0nQdvR1K3R6Cf1sg0PsphxwgNmVKTs",
+          "c14n2": "uFcK4vxnkZ1JDW5e8TPY4Xd2u4Gi2wd7yn0GyZBZXkY8"
+        },
+        "mandatoryIndexes": [
+          "0",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      }
+    },
+    "verification": {
+      "verified": true,
+      "document": {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://www.txdmv.gov/credentials/v1",
+          "https://w3id.org/security/data-integrity/v1"
+        ],
+        "type": [
+          "VerifiableCredential",
+          "DriverLicenseCredential"
+        ],
+        "credentialSubject": {
+          "driverLicense": {
+            "type": "DriverLicense",
+            "dateOfBirth": "01-01-1990",
+            "issuingAuthority": "TX"
+          }
+        }
+      }
+    }
+  }
+}
