@@ -48,41 +48,39 @@ import sd from '@transmute/vc-di-sd'
 const canonicalization = 'urdna2015'
 ```
 
-### Examples 
-
+### Examples
 
 ```ts
 const k = await sd.jose.controller.key.generate(alg)
 const signer = await sd.jose.controller.signer(k.privateKeyJwk)
 const verifier = await sd.jose.controller.verifier(k.publicKeyJwk)
 const protectedDocument = await sd.jose.sign({
-signer,
-document: exampleVerifiableCredential,
-mandatoryPointers: ['/credentialSubject/driverLicense/issuingAuthority'],
-canonicalization,
-documentLoader,
+  signer,
+  document: exampleVerifiableCredential,
+  mandatoryPointers: ['/credentialSubject/driverLicense/issuingAuthority'],
+  canonicalization,
+  documentLoader,
 })
 const presentedDocument = await sd.jose.present({
-verifier,
-document: protectedDocument,
-selectivePointers: ['/credentialSubject/driverLicense/dateOfBirth'],
-canonicalization,
-documentLoader,
+  verifier,
+  document: protectedDocument,
+  selectivePointers: ['/credentialSubject/driverLicense/dateOfBirth'],
+  canonicalization,
+  documentLoader,
 })
 const presentation = await sd.jose.verify({
-verifier,
-document: presentedDocument,
-canonicalization,
-documentLoader,
+  verifier,
+  document: presentedDocument,
+  canonicalization,
+  documentLoader,
 })
 ```
-
-
 
 <details>
 <summary>ES256</summary>
 
 ##### Controller
+
 ```json
 {
   "id": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMjU2IiwiYWxnIjoiRVMyNTYiLCJ4IjoidzFwTnZTSnlaZjlFXzRpS29vT1VaeGFKUXd2QUhiX1Y5c2ZsSG5mU2s2ZyIsInkiOiJsYXg4ZWc3NEZKVlVZaG5BdmFKa2xkT1RwZVFMUmJTYjl3WVNqUU1iNWhRIn0#0",
@@ -107,6 +105,7 @@ documentLoader,
 ```
 
 ##### Credential
+
 ```json
 {
   "@context": [
@@ -114,10 +113,7 @@ documentLoader,
     "https://www.txdmv.gov/credentials/v1",
     "https://w3id.org/security/data-integrity/v1"
   ],
-  "type": [
-    "VerifiableCredential",
-    "DriverLicenseCredential"
-  ],
+  "type": ["VerifiableCredential", "DriverLicenseCredential"],
   "issuer": "did:web:txdmv.gov",
   "issuanceDate": "2010-01-01T19:23:24Z",
   "credentialSubject": {
@@ -143,9 +139,7 @@ documentLoader,
         "alg": "ES256",
         "x": "jYId68wSRiE4juVnaWW0V6BcJ_ZDItX12XUMc70lkmU",
         "y": "Mmnw8koRUqgIx4IAt5xpEgewa0LZ6qnM0k10gya9opE",
-        "claimset_formats_supported": [
-          "w3cvc-jsonld"
-        ],
+        "claimset_formats_supported": ["w3cvc-jsonld"],
         "claimset_claims_supported": [
           "/credentialSubject/driverLicense/issuingAuthority"
         ]
@@ -155,9 +149,7 @@ documentLoader,
         "kty": "oct",
         "alg": "HS256",
         "use": "sig",
-        "key_ops": [
-          "sign"
-        ],
+        "key_ops": ["sign"],
         "k": "hel_3wNuO5XYf-qs9-WiwWvC3vF8Ex0DisC_Lf924zI"
       },
       {
@@ -184,6 +176,7 @@ documentLoader,
 ```
 
 ##### Presentation
+
 ```json
 {
   "@context": [
@@ -191,10 +184,7 @@ documentLoader,
     "https://www.txdmv.gov/credentials/v1",
     "https://w3id.org/security/data-integrity/v1"
   ],
-  "type": [
-    "VerifiableCredential",
-    "DriverLicenseCredential"
-  ],
+  "type": ["VerifiableCredential", "DriverLicenseCredential"],
   "credentialSubject": {
     "driverLicense": {
       "type": "DriverLicense",
@@ -216,9 +206,7 @@ documentLoader,
         "alg": "ES256",
         "x": "jYId68wSRiE4juVnaWW0V6BcJ_ZDItX12XUMc70lkmU",
         "y": "Mmnw8koRUqgIx4IAt5xpEgewa0LZ6qnM0k10gya9opE",
-        "claimset_formats_supported": [
-          "w3cvc-jsonld"
-        ],
+        "claimset_formats_supported": ["w3cvc-jsonld"],
         "claimset_claims_supported": [
           "/credentialSubject/driverLicense/issuingAuthority"
         ]
@@ -228,9 +216,7 @@ documentLoader,
         "kty": "oct",
         "alg": "HS256",
         "use": "sig",
-        "key_ops": [
-          "sign"
-        ],
+        "key_ops": ["sign"],
         "k": "hel_3wNuO5XYf-qs9-WiwWvC3vF8Ex0DisC_Lf924zI"
       },
       {
@@ -253,19 +239,13 @@ documentLoader,
       "c14n1": "uNS9T1kHYBBJmLJdaBbA7oRgUqMexnkQfkZHWCdOb9gw",
       "c14n2": "uQtjiCdede86tckejVMZcZ3mOW-7z3n_D8lY5x7Jn_iE"
     },
-    "mandatoryIndexes": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "5",
-      "6"
-    ]
+    "mandatoryIndexes": ["0", "1", "2", "3", "5", "6"]
   }
 }
 ```
 
 ##### Verification
+
 ```json
 {
   "verified": true,
@@ -275,10 +255,7 @@ documentLoader,
       "https://www.txdmv.gov/credentials/v1",
       "https://w3id.org/security/data-integrity/v1"
     ],
-    "type": [
-      "VerifiableCredential",
-      "DriverLicenseCredential"
-    ],
+    "type": ["VerifiableCredential", "DriverLicenseCredential"],
     "credentialSubject": {
       "driverLicense": {
         "type": "DriverLicense",
@@ -292,12 +269,11 @@ documentLoader,
 
 </details>
 
-
-
 <details>
 <summary>ES384</summary>
 
 ##### Controller
+
 ```json
 {
   "id": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMzg0IiwiYWxnIjoiRVMzODQiLCJ4IjoiX1BLaWZSc3RqRDZLUnBlYjlzSnRYWVBPUXBocTQwUDlndEFHOG01VG1RMy0xLWY0c3AxVElBU0pHWjdQUmJTTCIsInkiOiJzMzV1YlFJUGp4Y1FiajR5LU42dlF3V3BEcmRQM1JWdHNsOHhHSjk3RG9yUjFXM2FYdkhmOU1lUTVVLWFDVDhoIn0#0",
@@ -322,6 +298,7 @@ documentLoader,
 ```
 
 ##### Credential
+
 ```json
 {
   "@context": [
@@ -329,10 +306,7 @@ documentLoader,
     "https://www.txdmv.gov/credentials/v1",
     "https://w3id.org/security/data-integrity/v1"
   ],
-  "type": [
-    "VerifiableCredential",
-    "DriverLicenseCredential"
-  ],
+  "type": ["VerifiableCredential", "DriverLicenseCredential"],
   "issuer": "did:web:txdmv.gov",
   "issuanceDate": "2010-01-01T19:23:24Z",
   "credentialSubject": {
@@ -358,9 +332,7 @@ documentLoader,
         "alg": "ES384",
         "x": "qdcRfjuILGDccRJH5d2BVCUrGLV2Qxh4_kXawAzgw6sDgYflZffcZ8hpkbd87Kql",
         "y": "o5rnvL5NSg16U9jC4clsDvRIGTbIz41UEb6fX9FBG1B0iWc53VNhDxB81CM7pAic",
-        "claimset_formats_supported": [
-          "w3cvc-jsonld"
-        ],
+        "claimset_formats_supported": ["w3cvc-jsonld"],
         "claimset_claims_supported": [
           "/credentialSubject/driverLicense/issuingAuthority"
         ]
@@ -370,9 +342,7 @@ documentLoader,
         "kty": "oct",
         "alg": "HS256",
         "use": "sig",
-        "key_ops": [
-          "sign"
-        ],
+        "key_ops": ["sign"],
         "k": "GKjIVq5TKq9lVcR0_qAtUEM2BokHjNvMK9zkCeL6STM"
       },
       {
@@ -399,6 +369,7 @@ documentLoader,
 ```
 
 ##### Presentation
+
 ```json
 {
   "@context": [
@@ -406,10 +377,7 @@ documentLoader,
     "https://www.txdmv.gov/credentials/v1",
     "https://w3id.org/security/data-integrity/v1"
   ],
-  "type": [
-    "VerifiableCredential",
-    "DriverLicenseCredential"
-  ],
+  "type": ["VerifiableCredential", "DriverLicenseCredential"],
   "credentialSubject": {
     "driverLicense": {
       "type": "DriverLicense",
@@ -431,9 +399,7 @@ documentLoader,
         "alg": "ES384",
         "x": "qdcRfjuILGDccRJH5d2BVCUrGLV2Qxh4_kXawAzgw6sDgYflZffcZ8hpkbd87Kql",
         "y": "o5rnvL5NSg16U9jC4clsDvRIGTbIz41UEb6fX9FBG1B0iWc53VNhDxB81CM7pAic",
-        "claimset_formats_supported": [
-          "w3cvc-jsonld"
-        ],
+        "claimset_formats_supported": ["w3cvc-jsonld"],
         "claimset_claims_supported": [
           "/credentialSubject/driverLicense/issuingAuthority"
         ]
@@ -443,9 +409,7 @@ documentLoader,
         "kty": "oct",
         "alg": "HS256",
         "use": "sig",
-        "key_ops": [
-          "sign"
-        ],
+        "key_ops": ["sign"],
         "k": "GKjIVq5TKq9lVcR0_qAtUEM2BokHjNvMK9zkCeL6STM"
       },
       {
@@ -468,19 +432,13 @@ documentLoader,
       "c14n1": "ujUK8o4kwI2TvScWu7C97s_ppTZ3lLWc-M-5Zwq_OS0Q",
       "c14n2": "uVBbOqjaiw4wgaN90s088ra7GwGxNpeDH4p-tq_QgKFE"
     },
-    "mandatoryIndexes": [
-      "0",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6"
-    ]
+    "mandatoryIndexes": ["0", "2", "3", "4", "5", "6"]
   }
 }
 ```
 
 ##### Verification
+
 ```json
 {
   "verified": true,
@@ -490,10 +448,7 @@ documentLoader,
       "https://www.txdmv.gov/credentials/v1",
       "https://w3id.org/security/data-integrity/v1"
     ],
-    "type": [
-      "VerifiableCredential",
-      "DriverLicenseCredential"
-    ],
+    "type": ["VerifiableCredential", "DriverLicenseCredential"],
     "credentialSubject": {
       "driverLicense": {
         "type": "DriverLicense",
@@ -507,12 +462,11 @@ documentLoader,
 
 </details>
 
-
-
 <details>
 <summary>RS256</summary>
 
 ##### Controller
+
 ```json
 {
   "id": "did:jwk:eyJrdHkiOiJSU0EiLCJhbGciOiJSUzI1NiIsIm4iOiJwMjc0Z0JIZVVqa1pMekNwTURMYzJLYXFrcTdGYnIwWWV4TXAzWjRrSFA1NGV4MFRxQUFjNEdrSWlCUjVPOGpxNTFzUDd5b08wRW9wTFJhT21BY0dPTFlXSlg5QkFKUG1IN016dGJ5UEEzU3ZzdzBfZVJTM3JFd0pPa1JISXRRUmpkOFU4eWNnNDVnNHRGZkFmUWdneGczb2FhS3M2am1aUXJfclM0VHU4QnNCVXNkbEJYb1FQOTRfRUxYM0RUQklaVXhOMFBSekVPaXZaZERpc2VrRVVWUUFMLVNqT3hlOGhSb2xXOERUYXBxMXRnZWxqTjRIZUc1VmZqdExHNVRkWmhHdlFYNnRYb0hxRDczRTlLUlBaOEFvcV95VWpwYXBLZnpORzVJNGxZbktYRFdwVG94UHBKZjlWLWdKRW0tdlY4Z21QQXdobkk5UDdZUlZzRVVYSlEiLCJlIjoiQVFBQiJ9#0",
@@ -540,6 +494,7 @@ documentLoader,
 ```
 
 ##### Credential
+
 ```json
 {
   "@context": [
@@ -547,10 +502,7 @@ documentLoader,
     "https://www.txdmv.gov/credentials/v1",
     "https://w3id.org/security/data-integrity/v1"
   ],
-  "type": [
-    "VerifiableCredential",
-    "DriverLicenseCredential"
-  ],
+  "type": ["VerifiableCredential", "DriverLicenseCredential"],
   "issuer": "did:web:txdmv.gov",
   "issuanceDate": "2010-01-01T19:23:24Z",
   "credentialSubject": {
@@ -575,9 +527,7 @@ documentLoader,
         "alg": "RS256",
         "n": "5u-OGAvOKsb3rKTzkoOfDwy8_FuPqLOTrG_TOjuJZ0WYppqGic5G2kplmRrF545LkLDByPM0b-wqAyOXX9D4Wnw1MYYKu1HXBSKtNPS8EERcEugAOBaKIaxsnuqkRwvQuD3lr45r_wl5cmET0hykrlo0RbQraBtT0UNdZONMJhaRI_SgSTLIFif0xlYeWomCKD8lZxoL-SEhPdwFD3SGxEUAafMl2hnYVo5l5DMovHXbaTSSMnEp5vjKmGsQRgpfyoZ9cEcs_rMFkivXIDsKrr_Rwh8j-RYPZQ-RJ-1HZaXe_Xg9RNEO9dqGb-HPSqgIfp-dUVO8RS-Z0FIK5g43hw",
         "e": "AQAB",
-        "claimset_formats_supported": [
-          "w3cvc-jsonld"
-        ],
+        "claimset_formats_supported": ["w3cvc-jsonld"],
         "claimset_claims_supported": [
           "/credentialSubject/driverLicense/issuingAuthority"
         ]
@@ -587,9 +537,7 @@ documentLoader,
         "kty": "oct",
         "alg": "HS256",
         "use": "sig",
-        "key_ops": [
-          "sign"
-        ],
+        "key_ops": ["sign"],
         "k": "qeujSHLj99wylx-FlJwkeQUj6g4lhQr2Feltutlm7FU"
       },
       {
@@ -616,6 +564,7 @@ documentLoader,
 ```
 
 ##### Presentation
+
 ```json
 {
   "@context": [
@@ -623,10 +572,7 @@ documentLoader,
     "https://www.txdmv.gov/credentials/v1",
     "https://w3id.org/security/data-integrity/v1"
   ],
-  "type": [
-    "VerifiableCredential",
-    "DriverLicenseCredential"
-  ],
+  "type": ["VerifiableCredential", "DriverLicenseCredential"],
   "credentialSubject": {
     "driverLicense": {
       "type": "DriverLicense",
@@ -647,9 +593,7 @@ documentLoader,
         "alg": "RS256",
         "n": "5u-OGAvOKsb3rKTzkoOfDwy8_FuPqLOTrG_TOjuJZ0WYppqGic5G2kplmRrF545LkLDByPM0b-wqAyOXX9D4Wnw1MYYKu1HXBSKtNPS8EERcEugAOBaKIaxsnuqkRwvQuD3lr45r_wl5cmET0hykrlo0RbQraBtT0UNdZONMJhaRI_SgSTLIFif0xlYeWomCKD8lZxoL-SEhPdwFD3SGxEUAafMl2hnYVo5l5DMovHXbaTSSMnEp5vjKmGsQRgpfyoZ9cEcs_rMFkivXIDsKrr_Rwh8j-RYPZQ-RJ-1HZaXe_Xg9RNEO9dqGb-HPSqgIfp-dUVO8RS-Z0FIK5g43hw",
         "e": "AQAB",
-        "claimset_formats_supported": [
-          "w3cvc-jsonld"
-        ],
+        "claimset_formats_supported": ["w3cvc-jsonld"],
         "claimset_claims_supported": [
           "/credentialSubject/driverLicense/issuingAuthority"
         ]
@@ -659,9 +603,7 @@ documentLoader,
         "kty": "oct",
         "alg": "HS256",
         "use": "sig",
-        "key_ops": [
-          "sign"
-        ],
+        "key_ops": ["sign"],
         "k": "qeujSHLj99wylx-FlJwkeQUj6g4lhQr2Feltutlm7FU"
       },
       {
@@ -684,19 +626,13 @@ documentLoader,
       "c14n1": "uAmAeBEZCl5UQztXMFKbFnGNGH9Gs1DWhxugi_ngxPZw",
       "c14n2": "uceHnwQlfEjc-GyNcM1DOgrqCOkzkwVCIfH6UZmUzskk"
     },
-    "mandatoryIndexes": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "6"
-    ]
+    "mandatoryIndexes": ["0", "1", "2", "3", "4", "6"]
   }
 }
 ```
 
 ##### Verification
+
 ```json
 {
   "verified": true,
@@ -706,10 +642,7 @@ documentLoader,
       "https://www.txdmv.gov/credentials/v1",
       "https://w3id.org/security/data-integrity/v1"
     ],
-    "type": [
-      "VerifiableCredential",
-      "DriverLicenseCredential"
-    ],
+    "type": ["VerifiableCredential", "DriverLicenseCredential"],
     "credentialSubject": {
       "driverLicense": {
         "type": "DriverLicense",
@@ -723,12 +656,11 @@ documentLoader,
 
 </details>
 
-
-
 <details>
 <summary>ES256K</summary>
 
 ##### Controller
+
 ```json
 {
   "id": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6InNlY3AyNTZrMSIsImFsZyI6IkVTMjU2SyIsIngiOiJobU9xRXRrakJSbGgyQ0VkR0RrNTVKSGZ5bE43dTF1NHU4VU9RcXFzYlRJIiwieSI6ImhJWGphcEpHQ0o3QVB3UVFpSHpPZ0JsX3BScjFORzNZRUVidDN6RGVnNjQifQ#0",
@@ -753,6 +685,7 @@ documentLoader,
 ```
 
 ##### Credential
+
 ```json
 {
   "@context": [
@@ -760,10 +693,7 @@ documentLoader,
     "https://www.txdmv.gov/credentials/v1",
     "https://w3id.org/security/data-integrity/v1"
   ],
-  "type": [
-    "VerifiableCredential",
-    "DriverLicenseCredential"
-  ],
+  "type": ["VerifiableCredential", "DriverLicenseCredential"],
   "issuer": "did:web:txdmv.gov",
   "issuanceDate": "2010-01-01T19:23:24Z",
   "credentialSubject": {
@@ -789,9 +719,7 @@ documentLoader,
         "alg": "ES256K",
         "x": "iBqN3VBgNMsmXO8__gIjUFR5kKL7TZPzL2EzzrdwwL0",
         "y": "Yil3wIACuUntVN5dPb4_EP3ghP9WnPPu6S2OCbypSIg",
-        "claimset_formats_supported": [
-          "w3cvc-jsonld"
-        ],
+        "claimset_formats_supported": ["w3cvc-jsonld"],
         "claimset_claims_supported": [
           "/credentialSubject/driverLicense/issuingAuthority"
         ]
@@ -801,9 +729,7 @@ documentLoader,
         "kty": "oct",
         "alg": "HS256",
         "use": "sig",
-        "key_ops": [
-          "sign"
-        ],
+        "key_ops": ["sign"],
         "k": "mUBDOY1ia6d3Hlg89qhR1XgZHGtMDty4AogLkTwM7kk"
       },
       {
@@ -830,6 +756,7 @@ documentLoader,
 ```
 
 ##### Presentation
+
 ```json
 {
   "@context": [
@@ -837,10 +764,7 @@ documentLoader,
     "https://www.txdmv.gov/credentials/v1",
     "https://w3id.org/security/data-integrity/v1"
   ],
-  "type": [
-    "VerifiableCredential",
-    "DriverLicenseCredential"
-  ],
+  "type": ["VerifiableCredential", "DriverLicenseCredential"],
   "credentialSubject": {
     "driverLicense": {
       "type": "DriverLicense",
@@ -862,9 +786,7 @@ documentLoader,
         "alg": "ES256K",
         "x": "iBqN3VBgNMsmXO8__gIjUFR5kKL7TZPzL2EzzrdwwL0",
         "y": "Yil3wIACuUntVN5dPb4_EP3ghP9WnPPu6S2OCbypSIg",
-        "claimset_formats_supported": [
-          "w3cvc-jsonld"
-        ],
+        "claimset_formats_supported": ["w3cvc-jsonld"],
         "claimset_claims_supported": [
           "/credentialSubject/driverLicense/issuingAuthority"
         ]
@@ -874,9 +796,7 @@ documentLoader,
         "kty": "oct",
         "alg": "HS256",
         "use": "sig",
-        "key_ops": [
-          "sign"
-        ],
+        "key_ops": ["sign"],
         "k": "mUBDOY1ia6d3Hlg89qhR1XgZHGtMDty4AogLkTwM7kk"
       },
       {
@@ -899,19 +819,13 @@ documentLoader,
       "c14n1": "uj6S9LUxdROe5QarydZb3H89t6OiKZb8udmSCgJu0Hy0",
       "c14n2": "uw-aZA-0wwSbl9PKpxugJo_SanAgigkF5v-b3aqzs_V8"
     },
-    "mandatoryIndexes": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "6"
-    ]
+    "mandatoryIndexes": ["0", "1", "2", "3", "4", "6"]
   }
 }
 ```
 
 ##### Verification
+
 ```json
 {
   "verified": true,
@@ -921,10 +835,7 @@ documentLoader,
       "https://www.txdmv.gov/credentials/v1",
       "https://w3id.org/security/data-integrity/v1"
     ],
-    "type": [
-      "VerifiableCredential",
-      "DriverLicenseCredential"
-    ],
+    "type": ["VerifiableCredential", "DriverLicenseCredential"],
     "credentialSubject": {
       "driverLicense": {
         "type": "DriverLicense",
@@ -938,12 +849,11 @@ documentLoader,
 
 </details>
 
-
-
 <details>
 <summary>EdDSA</summary>
 
 ##### Controller
+
 ```json
 {
   "id": "did:jwk:eyJrdHkiOiJPS1AiLCJjcnYiOiJFZDI1NTE5IiwiYWxnIjoiRWREU0EiLCJ4IjoicjAxX2VkT2l1WVFyS0pjTjU1T3dRcnZuTWlWMldXUXJwSHZjSXJ1eUFaVSJ9#0",
@@ -966,6 +876,7 @@ documentLoader,
 ```
 
 ##### Credential
+
 ```json
 {
   "@context": [
@@ -973,10 +884,7 @@ documentLoader,
     "https://www.txdmv.gov/credentials/v1",
     "https://w3id.org/security/data-integrity/v1"
   ],
-  "type": [
-    "VerifiableCredential",
-    "DriverLicenseCredential"
-  ],
+  "type": ["VerifiableCredential", "DriverLicenseCredential"],
   "issuer": "did:web:txdmv.gov",
   "issuanceDate": "2010-01-01T19:23:24Z",
   "credentialSubject": {
@@ -1001,9 +909,7 @@ documentLoader,
         "crv": "Ed25519",
         "alg": "EdDSA",
         "x": "LJ3Hg9AxvtBvbaJbFdQVPqC0cNN16BAW2gI7x3j3ONI",
-        "claimset_formats_supported": [
-          "w3cvc-jsonld"
-        ],
+        "claimset_formats_supported": ["w3cvc-jsonld"],
         "claimset_claims_supported": [
           "/credentialSubject/driverLicense/issuingAuthority"
         ]
@@ -1013,9 +919,7 @@ documentLoader,
         "kty": "oct",
         "alg": "HS256",
         "use": "sig",
-        "key_ops": [
-          "sign"
-        ],
+        "key_ops": ["sign"],
         "k": "6ecVU3RkxsgqsrwnokiaJKrzKpSJ_7ZQM_-VzOWVJN8"
       },
       {
@@ -1042,6 +946,7 @@ documentLoader,
 ```
 
 ##### Presentation
+
 ```json
 {
   "@context": [
@@ -1049,10 +954,7 @@ documentLoader,
     "https://www.txdmv.gov/credentials/v1",
     "https://w3id.org/security/data-integrity/v1"
   ],
-  "type": [
-    "VerifiableCredential",
-    "DriverLicenseCredential"
-  ],
+  "type": ["VerifiableCredential", "DriverLicenseCredential"],
   "credentialSubject": {
     "driverLicense": {
       "type": "DriverLicense",
@@ -1073,9 +975,7 @@ documentLoader,
         "crv": "Ed25519",
         "alg": "EdDSA",
         "x": "LJ3Hg9AxvtBvbaJbFdQVPqC0cNN16BAW2gI7x3j3ONI",
-        "claimset_formats_supported": [
-          "w3cvc-jsonld"
-        ],
+        "claimset_formats_supported": ["w3cvc-jsonld"],
         "claimset_claims_supported": [
           "/credentialSubject/driverLicense/issuingAuthority"
         ]
@@ -1085,9 +985,7 @@ documentLoader,
         "kty": "oct",
         "alg": "HS256",
         "use": "sig",
-        "key_ops": [
-          "sign"
-        ],
+        "key_ops": ["sign"],
         "k": "6ecVU3RkxsgqsrwnokiaJKrzKpSJ_7ZQM_-VzOWVJN8"
       },
       {
@@ -1110,19 +1008,13 @@ documentLoader,
       "c14n1": "u1cqsvx7nAFbUfv1JGsYaYwL22Y4rwB6X-_pQm-OyZ6s",
       "c14n2": "u0TAxbGB5FQuFU7oA-kaosQWkkozClvWj4oNZNaA0p50"
     },
-    "mandatoryIndexes": [
-      "0",
-      "1",
-      "3",
-      "4",
-      "5",
-      "6"
-    ]
+    "mandatoryIndexes": ["0", "1", "3", "4", "5", "6"]
   }
 }
 ```
 
 ##### Verification
+
 ```json
 {
   "verified": true,
@@ -1132,10 +1024,7 @@ documentLoader,
       "https://www.txdmv.gov/credentials/v1",
       "https://w3id.org/security/data-integrity/v1"
     ],
-    "type": [
-      "VerifiableCredential",
-      "DriverLicenseCredential"
-    ],
+    "type": ["VerifiableCredential", "DriverLicenseCredential"],
     "credentialSubject": {
       "driverLicense": {
         "type": "DriverLicense",
@@ -1148,4 +1037,3 @@ documentLoader,
 ```
 
 </details>
-
