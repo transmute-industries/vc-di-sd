@@ -1,23 +1,23 @@
 {
   "ES256": {
     "controller": {
-      "id": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMjU2IiwiYWxnIjoiRVMyNTYiLCJ4IjoiTmlwYlBVM1hqZzMyME41WVRMcnhJbGZIMjV2Y3BEWVZiUVE2amd4NnNxdyIsInkiOiJ1SnhwYk4xM1lJR184dXpwaXE4eVVDNXA0VElXNHU4MUJva0FtZ1dLM2dZIn0#0",
+      "id": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMjU2IiwiYWxnIjoiRVMyNTYiLCJ4IjoidzFwTnZTSnlaZjlFXzRpS29vT1VaeGFKUXd2QUhiX1Y5c2ZsSG5mU2s2ZyIsInkiOiJsYXg4ZWc3NEZKVlVZaG5BdmFKa2xkT1RwZVFMUmJTYjl3WVNqUU1iNWhRIn0#0",
       "type": "JsonWebKey",
-      "controller": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMjU2IiwiYWxnIjoiRVMyNTYiLCJ4IjoiTmlwYlBVM1hqZzMyME41WVRMcnhJbGZIMjV2Y3BEWVZiUVE2amd4NnNxdyIsInkiOiJ1SnhwYk4xM1lJR184dXpwaXE4eVVDNXA0VElXNHU4MUJva0FtZ1dLM2dZIn0",
+      "controller": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMjU2IiwiYWxnIjoiRVMyNTYiLCJ4IjoidzFwTnZTSnlaZjlFXzRpS29vT1VaeGFKUXd2QUhiX1Y5c2ZsSG5mU2s2ZyIsInkiOiJsYXg4ZWc3NEZKVlVZaG5BdmFKa2xkT1RwZVFMUmJTYjl3WVNqUU1iNWhRIn0",
       "publicKeyJwk": {
         "kty": "EC",
         "crv": "P-256",
         "alg": "ES256",
-        "x": "NipbPU3Xjg320N5YTLrxIlfH25vcpDYVbQQ6jgx6sqw",
-        "y": "uJxpbN13YIG_8uzpiq8yUC5p4TIW4u81BokAmgWK3gY"
+        "x": "w1pNvSJyZf9E_4iKooOUZxaJQwvAHb_V9sflHnfSk6g",
+        "y": "lax8eg74FJVUYhnAvaJkldOTpeQLRbSb9wYSjQMb5hQ"
       },
       "privateKeyJwk": {
         "kty": "EC",
         "crv": "P-256",
         "alg": "ES256",
-        "x": "NipbPU3Xjg320N5YTLrxIlfH25vcpDYVbQQ6jgx6sqw",
-        "y": "uJxpbN13YIG_8uzpiq8yUC5p4TIW4u81BokAmgWK3gY",
-        "d": "RTBirq-mVgovvucwSmpmiELUBWfrx0rLwPxQcai9zfI"
+        "x": "w1pNvSJyZf9E_4iKooOUZxaJQwvAHb_V9sflHnfSk6g",
+        "y": "lax8eg74FJVUYhnAvaJkldOTpeQLRbSb9wYSjQMb5hQ",
+        "d": "scMGSKpUnBfAmEcNvECrpneNlVOqrZGUUcK60_T6IIw"
       }
     },
     "credential": {
@@ -43,17 +43,17 @@
       },
       "proof": {
         "type": "DataIntegrityProof",
-        "created": "2023-06-04T22:30:30.158Z",
+        "created": "2023-06-04T22:35:08.444Z",
         "cryptosuite": "di-sd-urdna2015-jose-2042",
         "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:MggqrOi2MEJR1qOeF8Q9gKRxUNB9vrjbwqogJ1Er8k8",
         "keys": [
           {
             "kid": "#disclosure",
             "kty": "OKP",
             "crv": "Ed25519",
             "alg": "EdDSA",
-            "x": "MuY0p483ssi6VUpJ0UGOLOSxX1WkE_niTNA_NxujJM0",
+            "x": "LJ3Hg9AxvtBvbaJbFdQVPqC0cNN16BAW2gI7x3j3ONI",
             "claimset_formats_supported": [
               "w3cvc-jsonld"
             ],
@@ -69,26 +69,26 @@
             "key_ops": [
               "sign"
             ],
-            "k": "Wov8MHAMTOe19Sut5SW4WIhn4CiYHvt6UBLRUXphgwM"
+            "k": "6ecVU3RkxsgqsrwnokiaJKrzKpSJ_7ZQM_-VzOWVJN8"
           },
           {
             "kid": "#mandatory",
             "kty": "oct",
-            "k": "PfdiDeKASoFqQZPRhOcIyOt29QEdGRuOKRYBZQ688FA"
+            "k": "R6PqMcxibm3QUtwoPSMXKbQo54d_vgyLaupafIYTUdI"
           },
           {
             "kid": "#proof",
             "kty": "oct",
-            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+            "k": "N3ZIo4DTV7KVVThNNMceBE9eQKWpoKkCBXdyseM2_ok"
           }
         ],
-        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i2uN5hg30piImDm4wBtbroKA_kb65hmvN0UkC011fMnfOaP8fwYwhbzkpx3WIyNeFjab5lVc6bhngDmv8Jr0CQ",
+        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..cx9pLJE11YOgZCKbkxDA37tNXOZUK2ddvVzEwMo9ww9RVuRkFtk3Iw8nXA_3VOz_QMQjPXVtHWPa5lSIejczCQ",
         "signatures": [
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iTjVivx71jIyfvtxDuSfzsolPnE24yIt6sObkbLNpJ9Da05rbvFpam_SGmJg88AvvZvrVNCsZyC7Lt1l3v3vDA",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..v7SzkV927X5gCHRITCBWFROcFk2bllzi3rRBWvkg4Xe6GcYcSen-mOL5uhAoW2l-lmds9VMu-y5n-nTSrug6Cw",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..36tuhC6QLr62hPze-8Ybb5HuZDbt4hz49ufl4R2JEVaOgXKeQ12xTLy3gHB5TcrpGllHbUbu7VhyrHn4GVNcDw",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..NK-_WVCVJrMVZXL9rDq7FmfcyPzhFZ14vwgYaN49DmKxNoXR5SiOxW9nMsWPKPMKYolO3A5V94YGxNVThEeoAA",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rn-UmsmkvaO6nI8coqrzHAQVbBCzRYVjLpyYc14DCZPHfhCvrse27tDNYFEhZlOPmwE3H6I6W7eEBUB7DGuvAQ"
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kt_z9lA_4SmmtFitSrE1VZCJovN_UF1K2o-s21DBuYfXt_Yd7ZMcgPIa2I9Ef4gaYF3nem0bp3C7PwOaARKkAw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..oMJxvfSvma7eufbb9Gflg9DNsOY1JS5MpDj6Hg51u1wdiQYpwJUv79KmDu7dqtGQleSlsQS8F0pSANIugMmqDg",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..c2M8BRhtuQ3hAzuw2Ck3ng0rPAQK6-Vjx9tldHHBuzjGlGIVDZF3mz8stHgF5BB8ozT1lMkPUuDt7kJoBMsnDQ",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..4x9cp01nPBdjuYShKgwrchWraETORU1ejxRN1j-_ClUI9zJ_151EickU5faGnlUJLh8MxP5_AD4Zu1mapqloCQ",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rSWBYRySybNRuAxBROwZKdl4xE8uVvZF828ga9Et2iAxPo4e5qZAb7dCfEAnI9otm1bm5_fFIsK46tg0cWfeBg"
         ]
       }
     },
@@ -111,18 +111,18 @@
       },
       "proof": {
         "type": "DataIntegrityProof",
-        "created": "2023-06-04T22:30:30.158Z",
+        "created": "2023-06-04T22:35:08.444Z",
         "cryptosuite": "di-sd-urdna2015-jose-2042",
         "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:MggqrOi2MEJR1qOeF8Q9gKRxUNB9vrjbwqogJ1Er8k8",
         "keys": [
           {
             "kid": "#disclosure",
             "kty": "EC",
             "crv": "P-256",
             "alg": "ES256",
-            "x": "dH0Vl6wCebLS4LOxSFlpwEO5g3_6pqsbrDQGCYyCTL8",
-            "y": "2kShdqbr3ym9UzNkj2U_G1Rj4aeLnmuuivNCwHAJiek",
+            "x": "jYId68wSRiE4juVnaWW0V6BcJ_ZDItX12XUMc70lkmU",
+            "y": "Mmnw8koRUqgIx4IAt5xpEgewa0LZ6qnM0k10gya9opE",
             "claimset_formats_supported": [
               "w3cvc-jsonld"
             ],
@@ -138,27 +138,220 @@
             "key_ops": [
               "sign"
             ],
-            "k": "dNx_AFoj-3scquubHF2-ahAsAg5tNuUtbQ2bLXhDt34"
+            "k": "hel_3wNuO5XYf-qs9-WiwWvC3vF8Ex0DisC_Lf924zI"
           },
           {
             "kid": "#mandatory",
             "kty": "oct",
-            "k": "oXXfibKRKb5lZlyXlTobcHUD3EBlaTdv6kwQt4mO-LA"
+            "k": "Kkchlbnz5M0gUEmsvqHWY1d0gYR3Gjzh5DTivzD7UVk"
           },
           {
             "kid": "#proof",
             "kty": "oct",
-            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+            "k": "N3ZIo4DTV7KVVThNNMceBE9eQKWpoKkCBXdyseM2_ok"
           }
         ],
-        "signature": "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..f-cA-eXmdaSZdNIgSCcJ-QvAHtOdixUZ6uDDgQjU6KCFbTKAo5T_k2xEei3YGO-XdnpvRxQdepPF8-1jbDZoZw",
+        "signature": "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..AmwQsW61wdJDUvJjtuZ5sEFfnJWXvfjF3vGWE6FEWf-WbuvRZvYIZpee-c6h_7HP2MSnXw9nTPLxn5ucwokbsQ",
         "signatures": [
-          "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..m50yLHNXT9KgN5OnnJvS6sxHpVHxUeaforn8VvOkW-iA5dxNb29q2XJ0JVS73Y98SuA8C2eYbdbQBVbC-uOJ5A"
+          "eyJhbGciOiJFUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..b3nmlkqKvnD39gqid49_HQ5tDyayr8l_AdfEGEixwM9u196Plf67axDNnoMC5ClL9exxqC21EbQgGYPYEp_EhA"
         ],
         "labels": {
-          "c14n0": "uI4ixJ5_tNfouaM5r5v-0lQ_A7UO1FRnX1rDaHnz-_xE",
-          "c14n1": "uAAuhXleFJPvBkom9etB8hmJ5PQkaLvCnJ_Ke1MWU1NI",
-          "c14n2": "u47eHX_fCrrY75gU6r0GmuH8v4OY1v36v9bfjzEnbOUc"
+          "c14n0": "uhpi1o2MvbeI9x3_F6bpLSmftQdig1cXdNW_NiNiuP_Q",
+          "c14n1": "uNS9T1kHYBBJmLJdaBbA7oRgUqMexnkQfkZHWCdOb9gw",
+          "c14n2": "uQtjiCdede86tckejVMZcZ3mOW-7z3n_D8lY5x7Jn_iE"
+        },
+        "mandatoryIndexes": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ]
+      }
+    },
+    "verification": {
+      "verified": true,
+      "document": {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          "https://www.txdmv.gov/credentials/v1",
+          "https://w3id.org/security/data-integrity/v1"
+        ],
+        "type": [
+          "VerifiableCredential",
+          "DriverLicenseCredential"
+        ],
+        "credentialSubject": {
+          "driverLicense": {
+            "type": "DriverLicense",
+            "dateOfBirth": "01-01-1990",
+            "issuingAuthority": "TX"
+          }
+        }
+      }
+    }
+  },
+  "ES384": {
+    "controller": {
+      "id": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMzg0IiwiYWxnIjoiRVMzODQiLCJ4IjoiX1BLaWZSc3RqRDZLUnBlYjlzSnRYWVBPUXBocTQwUDlndEFHOG01VG1RMy0xLWY0c3AxVElBU0pHWjdQUmJTTCIsInkiOiJzMzV1YlFJUGp4Y1FiajR5LU42dlF3V3BEcmRQM1JWdHNsOHhHSjk3RG9yUjFXM2FYdkhmOU1lUTVVLWFDVDhoIn0#0",
+      "type": "JsonWebKey",
+      "controller": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMzg0IiwiYWxnIjoiRVMzODQiLCJ4IjoiX1BLaWZSc3RqRDZLUnBlYjlzSnRYWVBPUXBocTQwUDlndEFHOG01VG1RMy0xLWY0c3AxVElBU0pHWjdQUmJTTCIsInkiOiJzMzV1YlFJUGp4Y1FiajR5LU42dlF3V3BEcmRQM1JWdHNsOHhHSjk3RG9yUjFXM2FYdkhmOU1lUTVVLWFDVDhoIn0",
+      "publicKeyJwk": {
+        "kty": "EC",
+        "crv": "P-384",
+        "alg": "ES384",
+        "x": "_PKifRstjD6KRpeb9sJtXYPOQphq40P9gtAG8m5TmQ3-1-f4sp1TIASJGZ7PRbSL",
+        "y": "s35ubQIPjxcQbj4y-N6vQwWpDrdP3RVtsl8xGJ97DorR1W3aXvHf9MeQ5U-aCT8h"
+      },
+      "privateKeyJwk": {
+        "kty": "EC",
+        "crv": "P-384",
+        "alg": "ES384",
+        "x": "_PKifRstjD6KRpeb9sJtXYPOQphq40P9gtAG8m5TmQ3-1-f4sp1TIASJGZ7PRbSL",
+        "y": "s35ubQIPjxcQbj4y-N6vQwWpDrdP3RVtsl8xGJ97DorR1W3aXvHf9MeQ5U-aCT8h",
+        "d": "7lY6gqws9sR1Wb01c-mjuiZaOXWcSi7SeVzzZfcLrZPEs2QR75ZBHLp_oQPZ1sAz"
+      }
+    },
+    "credential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://www.txdmv.gov/credentials/v1",
+        "https://w3id.org/security/data-integrity/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "DriverLicenseCredential"
+      ],
+      "issuer": "did:web:txdmv.gov",
+      "issuanceDate": "2010-01-01T19:23:24Z",
+      "credentialSubject": {
+        "driverLicense": {
+          "type": "DriverLicense",
+          "documentIdentifier": "T21387yc328c7y32h23f23",
+          "dateOfBirth": "01-01-1990",
+          "expirationDate": "01-01-2030",
+          "issuingAuthority": "TX"
+        }
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-06-04T22:35:08.444Z",
+        "cryptosuite": "di-sd-urdna2015-jose-2042",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:MggqrOi2MEJR1qOeF8Q9gKRxUNB9vrjbwqogJ1Er8k8",
+        "keys": [
+          {
+            "kid": "#disclosure",
+            "kty": "OKP",
+            "crv": "Ed25519",
+            "alg": "EdDSA",
+            "x": "LJ3Hg9AxvtBvbaJbFdQVPqC0cNN16BAW2gI7x3j3ONI",
+            "claimset_formats_supported": [
+              "w3cvc-jsonld"
+            ],
+            "claimset_claims_supported": [
+              "/credentialSubject/driverLicense/issuingAuthority"
+            ]
+          },
+          {
+            "kid": "#hmac",
+            "kty": "oct",
+            "alg": "HS256",
+            "use": "sig",
+            "key_ops": [
+              "sign"
+            ],
+            "k": "6ecVU3RkxsgqsrwnokiaJKrzKpSJ_7ZQM_-VzOWVJN8"
+          },
+          {
+            "kid": "#mandatory",
+            "kty": "oct",
+            "k": "R6PqMcxibm3QUtwoPSMXKbQo54d_vgyLaupafIYTUdI"
+          },
+          {
+            "kid": "#proof",
+            "kty": "oct",
+            "k": "N3ZIo4DTV7KVVThNNMceBE9eQKWpoKkCBXdyseM2_ok"
+          }
+        ],
+        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..cx9pLJE11YOgZCKbkxDA37tNXOZUK2ddvVzEwMo9ww9RVuRkFtk3Iw8nXA_3VOz_QMQjPXVtHWPa5lSIejczCQ",
+        "signatures": [
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kt_z9lA_4SmmtFitSrE1VZCJovN_UF1K2o-s21DBuYfXt_Yd7ZMcgPIa2I9Ef4gaYF3nem0bp3C7PwOaARKkAw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..oMJxvfSvma7eufbb9Gflg9DNsOY1JS5MpDj6Hg51u1wdiQYpwJUv79KmDu7dqtGQleSlsQS8F0pSANIugMmqDg",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..c2M8BRhtuQ3hAzuw2Ck3ng0rPAQK6-Vjx9tldHHBuzjGlGIVDZF3mz8stHgF5BB8ozT1lMkPUuDt7kJoBMsnDQ",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..4x9cp01nPBdjuYShKgwrchWraETORU1ejxRN1j-_ClUI9zJ_151EickU5faGnlUJLh8MxP5_AD4Zu1mapqloCQ",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rSWBYRySybNRuAxBROwZKdl4xE8uVvZF828ga9Et2iAxPo4e5qZAb7dCfEAnI9otm1bm5_fFIsK46tg0cWfeBg"
+        ]
+      }
+    },
+    "presentation": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://www.txdmv.gov/credentials/v1",
+        "https://w3id.org/security/data-integrity/v1"
+      ],
+      "type": [
+        "VerifiableCredential",
+        "DriverLicenseCredential"
+      ],
+      "credentialSubject": {
+        "driverLicense": {
+          "type": "DriverLicense",
+          "dateOfBirth": "01-01-1990",
+          "issuingAuthority": "TX"
+        }
+      },
+      "proof": {
+        "type": "DataIntegrityProof",
+        "created": "2023-06-04T22:35:08.444Z",
+        "cryptosuite": "di-sd-urdna2015-jose-2042",
+        "proofPurpose": "assertionMethod",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:MggqrOi2MEJR1qOeF8Q9gKRxUNB9vrjbwqogJ1Er8k8",
+        "keys": [
+          {
+            "kid": "#disclosure",
+            "kty": "EC",
+            "crv": "P-384",
+            "alg": "ES384",
+            "x": "qdcRfjuILGDccRJH5d2BVCUrGLV2Qxh4_kXawAzgw6sDgYflZffcZ8hpkbd87Kql",
+            "y": "o5rnvL5NSg16U9jC4clsDvRIGTbIz41UEb6fX9FBG1B0iWc53VNhDxB81CM7pAic",
+            "claimset_formats_supported": [
+              "w3cvc-jsonld"
+            ],
+            "claimset_claims_supported": [
+              "/credentialSubject/driverLicense/issuingAuthority"
+            ]
+          },
+          {
+            "kid": "#hmac",
+            "kty": "oct",
+            "alg": "HS256",
+            "use": "sig",
+            "key_ops": [
+              "sign"
+            ],
+            "k": "GKjIVq5TKq9lVcR0_qAtUEM2BokHjNvMK9zkCeL6STM"
+          },
+          {
+            "kid": "#mandatory",
+            "kty": "oct",
+            "k": "E9gLXnMniQt2qCvUj5RPaFivYWQK6avP-uCcgpj8Q9o"
+          },
+          {
+            "kid": "#proof",
+            "kty": "oct",
+            "k": "N3ZIo4DTV7KVVThNNMceBE9eQKWpoKkCBXdyseM2_ok"
+          }
+        ],
+        "signature": "eyJhbGciOiJFUzM4NCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..n1TuMczCJj3Bf74cI64g8XYsUufrHUgpd67XusfRhaplMh6WwEmoWHXELd9ve-u10yhuRS1g8KawS11Ne-FlKmaSc7XebEWJnte3RivG4aLQ_vPIw-wLmasiULjcTKhr",
+        "signatures": [
+          "eyJhbGciOiJFUzM4NCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..ERNy2SubB9NpNRR0CkQXDFP1jHeQ1cmV0sv_KF-GXzak4KC_Oh32DutPllzShq4EuKnydPjZhgbUIPD9BRoOyNtz3jHIh9aQjgY95vc-7KJhAFBMGnBCO1m3quQ-nngu"
+        ],
+        "labels": {
+          "c14n0": "ucRDH5ynrwXddCiA6XMMehGBi_vfkQRATWdSuB3jVncc",
+          "c14n1": "ujUK8o4kwI2TvScWu7C97s_ppTZ3lLWc-M-5Zwq_OS0Q",
+          "c14n2": "uVBbOqjaiw4wgaN90s088ra7GwGxNpeDH4p-tq_QgKFE"
         },
         "mandatoryIndexes": [
           "0",
@@ -192,221 +385,28 @@
       }
     }
   },
-  "ES384": {
-    "controller": {
-      "id": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMzg0IiwiYWxnIjoiRVMzODQiLCJ4IjoiODBjUXUtVWRWUklqRTBETHlqMGUwMUViMDVyRExTRTdrLXJ6MUFMVlZxcHJobHdyLVJfdmZ1RkphdlNjNUQ4NCIsInkiOiJzLUNGQWx3VzZjZm4wdDRrengwc1dSR3NZUDZhNXM1S3FLVXBBczZnNEthUG85NUJITzFEYlRtd3dtcDdiTFdGIn0#0",
-      "type": "JsonWebKey",
-      "controller": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMzg0IiwiYWxnIjoiRVMzODQiLCJ4IjoiODBjUXUtVWRWUklqRTBETHlqMGUwMUViMDVyRExTRTdrLXJ6MUFMVlZxcHJobHdyLVJfdmZ1RkphdlNjNUQ4NCIsInkiOiJzLUNGQWx3VzZjZm4wdDRrengwc1dSR3NZUDZhNXM1S3FLVXBBczZnNEthUG85NUJITzFEYlRtd3dtcDdiTFdGIn0",
-      "publicKeyJwk": {
-        "kty": "EC",
-        "crv": "P-384",
-        "alg": "ES384",
-        "x": "80cQu-UdVRIjE0DLyj0e01Eb05rDLSE7k-rz1ALVVqprhlwr-R_vfuFJavSc5D84",
-        "y": "s-CFAlwW6cfn0t4kzx0sWRGsYP6a5s5KqKUpAs6g4KaPo95BHO1DbTmwwmp7bLWF"
-      },
-      "privateKeyJwk": {
-        "kty": "EC",
-        "crv": "P-384",
-        "alg": "ES384",
-        "x": "80cQu-UdVRIjE0DLyj0e01Eb05rDLSE7k-rz1ALVVqprhlwr-R_vfuFJavSc5D84",
-        "y": "s-CFAlwW6cfn0t4kzx0sWRGsYP6a5s5KqKUpAs6g4KaPo95BHO1DbTmwwmp7bLWF",
-        "d": "tMSN9ptc_5iX5amZU3gIsRTmyYCvDQbRyvSjbq4WDH1o5KGIrR5DERKuZ4_BKWSv"
-      }
-    },
-    "credential": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://www.txdmv.gov/credentials/v1",
-        "https://w3id.org/security/data-integrity/v1"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "DriverLicenseCredential"
-      ],
-      "issuer": "did:web:txdmv.gov",
-      "issuanceDate": "2010-01-01T19:23:24Z",
-      "credentialSubject": {
-        "driverLicense": {
-          "type": "DriverLicense",
-          "documentIdentifier": "T21387yc328c7y32h23f23",
-          "dateOfBirth": "01-01-1990",
-          "expirationDate": "01-01-2030",
-          "issuingAuthority": "TX"
-        }
-      },
-      "proof": {
-        "type": "DataIntegrityProof",
-        "created": "2023-06-04T22:30:30.158Z",
-        "cryptosuite": "di-sd-urdna2015-jose-2042",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
-        "keys": [
-          {
-            "kid": "#disclosure",
-            "kty": "OKP",
-            "crv": "Ed25519",
-            "alg": "EdDSA",
-            "x": "MuY0p483ssi6VUpJ0UGOLOSxX1WkE_niTNA_NxujJM0",
-            "claimset_formats_supported": [
-              "w3cvc-jsonld"
-            ],
-            "claimset_claims_supported": [
-              "/credentialSubject/driverLicense/issuingAuthority"
-            ]
-          },
-          {
-            "kid": "#hmac",
-            "kty": "oct",
-            "alg": "HS256",
-            "use": "sig",
-            "key_ops": [
-              "sign"
-            ],
-            "k": "Wov8MHAMTOe19Sut5SW4WIhn4CiYHvt6UBLRUXphgwM"
-          },
-          {
-            "kid": "#mandatory",
-            "kty": "oct",
-            "k": "PfdiDeKASoFqQZPRhOcIyOt29QEdGRuOKRYBZQ688FA"
-          },
-          {
-            "kid": "#proof",
-            "kty": "oct",
-            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
-          }
-        ],
-        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i2uN5hg30piImDm4wBtbroKA_kb65hmvN0UkC011fMnfOaP8fwYwhbzkpx3WIyNeFjab5lVc6bhngDmv8Jr0CQ",
-        "signatures": [
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iTjVivx71jIyfvtxDuSfzsolPnE24yIt6sObkbLNpJ9Da05rbvFpam_SGmJg88AvvZvrVNCsZyC7Lt1l3v3vDA",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..v7SzkV927X5gCHRITCBWFROcFk2bllzi3rRBWvkg4Xe6GcYcSen-mOL5uhAoW2l-lmds9VMu-y5n-nTSrug6Cw",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..36tuhC6QLr62hPze-8Ybb5HuZDbt4hz49ufl4R2JEVaOgXKeQ12xTLy3gHB5TcrpGllHbUbu7VhyrHn4GVNcDw",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..NK-_WVCVJrMVZXL9rDq7FmfcyPzhFZ14vwgYaN49DmKxNoXR5SiOxW9nMsWPKPMKYolO3A5V94YGxNVThEeoAA",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rn-UmsmkvaO6nI8coqrzHAQVbBCzRYVjLpyYc14DCZPHfhCvrse27tDNYFEhZlOPmwE3H6I6W7eEBUB7DGuvAQ"
-        ]
-      }
-    },
-    "presentation": {
-      "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://www.txdmv.gov/credentials/v1",
-        "https://w3id.org/security/data-integrity/v1"
-      ],
-      "type": [
-        "VerifiableCredential",
-        "DriverLicenseCredential"
-      ],
-      "credentialSubject": {
-        "driverLicense": {
-          "type": "DriverLicense",
-          "dateOfBirth": "01-01-1990",
-          "issuingAuthority": "TX"
-        }
-      },
-      "proof": {
-        "type": "DataIntegrityProof",
-        "created": "2023-06-04T22:30:30.158Z",
-        "cryptosuite": "di-sd-urdna2015-jose-2042",
-        "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
-        "keys": [
-          {
-            "kid": "#disclosure",
-            "kty": "EC",
-            "crv": "P-384",
-            "alg": "ES384",
-            "x": "WzaIy-vRmy8-Mqjpq8RLsoO_xZPjcRtqF-S7_bXYQcQ6fYVkrDtAHkWwv2DVMyJx",
-            "y": "oY9-BMk0BL2PAVDFX3Mx8BiRFEW_q-U_qe-yYzDxuXu_7TU-q8Usti8mPx4tYTMx",
-            "claimset_formats_supported": [
-              "w3cvc-jsonld"
-            ],
-            "claimset_claims_supported": [
-              "/credentialSubject/driverLicense/issuingAuthority"
-            ]
-          },
-          {
-            "kid": "#hmac",
-            "kty": "oct",
-            "alg": "HS256",
-            "use": "sig",
-            "key_ops": [
-              "sign"
-            ],
-            "k": "d0GjdXqGlSWtBCUAdyWQJ4meZEDNFQO0OVCiddn67yY"
-          },
-          {
-            "kid": "#mandatory",
-            "kty": "oct",
-            "k": "4tFivTCjZoddEBCL6Wt6cUHQ_VQgiSQPHgpj0j0W3tU"
-          },
-          {
-            "kid": "#proof",
-            "kty": "oct",
-            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
-          }
-        ],
-        "signature": "eyJhbGciOiJFUzM4NCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..HC_ZcFiIqqTsdQRIzdbrVz3k8eoeFvDZXH26TbbN4OcocO78pc2z1uwBYs1G7tqR7GeMgzuQKhAjvXyQi7vxtreBJw_r-OF4JyFaAR2Y9-eLYxPVmDRTq6QaeJCMNXpt",
-        "signatures": [
-          "eyJhbGciOiJFUzM4NCIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..IZ72t62Vd3NVUGremIH0-7_DHqBVR2nzQ8Clwfgb6XfGM-C7Wy8HuN05xdgAad76sTF4cSbaYItqY10kZJxVF7yO-UnGSEIQOHcjuwTnhvy2V7M_BmQ8mHgqrsOysM3l"
-        ],
-        "labels": {
-          "c14n0": "uHS9LGgxx-SlW_q8QXa-fBI4p7T7YLMNleAoLkw5eR_o",
-          "c14n1": "uKNIUql47qsb4A0m9Je-uUx9naLlYY_Dy6XYtswDrxh4",
-          "c14n2": "uzgu_x7II7zsEJQVgSjkcwdm2iO5IU_u3FkNCp7yarxc"
-        },
-        "mandatoryIndexes": [
-          "0",
-          "1",
-          "2",
-          "3",
-          "4",
-          "6"
-        ]
-      }
-    },
-    "verification": {
-      "verified": true,
-      "document": {
-        "@context": [
-          "https://www.w3.org/2018/credentials/v1",
-          "https://www.txdmv.gov/credentials/v1",
-          "https://w3id.org/security/data-integrity/v1"
-        ],
-        "type": [
-          "VerifiableCredential",
-          "DriverLicenseCredential"
-        ],
-        "credentialSubject": {
-          "driverLicense": {
-            "type": "DriverLicense",
-            "dateOfBirth": "01-01-1990",
-            "issuingAuthority": "TX"
-          }
-        }
-      }
-    }
-  },
   "RS256": {
     "controller": {
-      "id": "did:jwk:eyJrdHkiOiJSU0EiLCJhbGciOiJSUzI1NiIsIm4iOiJwZ2VURm5scHNsbGVkYVAxNFRBeU5ucGF0Ql80Vkh4MUpsbnM5cjVNZ3dKYjVOQmRmNDZnVjJyVWtYblUwS2ZPMzZWbWNORlM2aEFRU0tiejZkYlAyU1luRzlYdm1kdkF1Zkg2NDJYY0xEMWo5UlphTGNOOGtZQUxZZWpYc0l6Ri1yZFNMMFRYQmM5ZzJXSWN4bmVKQTBCdXpTUzhPSDJXZ3FVMjRVV3JTNEpzWVl3Y2NWN2ZROG1leTVSay04cGRUTDFsWWY1UTduOGdvaDYycUVvbGdPMHM4OXBsSlpTUXZQWG9zUXBaakJ1bDJGOUY2NXZ6ZzJrV3hYNktVU3R6WFBwN045Tnd1QzlSeXNWSmlIN2lFTTdYMEd3QXdaSm5iTU5YZ25XYldaYlFNMi1Jb2JVMEhGbGNBdnBoOTJBVlNScjVsdWhhZWtwdEVnRU5fUUNYOHciLCJlIjoiQVFBQiJ9#0",
+      "id": "did:jwk:eyJrdHkiOiJSU0EiLCJhbGciOiJSUzI1NiIsIm4iOiJwMjc0Z0JIZVVqa1pMekNwTURMYzJLYXFrcTdGYnIwWWV4TXAzWjRrSFA1NGV4MFRxQUFjNEdrSWlCUjVPOGpxNTFzUDd5b08wRW9wTFJhT21BY0dPTFlXSlg5QkFKUG1IN016dGJ5UEEzU3ZzdzBfZVJTM3JFd0pPa1JISXRRUmpkOFU4eWNnNDVnNHRGZkFmUWdneGczb2FhS3M2am1aUXJfclM0VHU4QnNCVXNkbEJYb1FQOTRfRUxYM0RUQklaVXhOMFBSekVPaXZaZERpc2VrRVVWUUFMLVNqT3hlOGhSb2xXOERUYXBxMXRnZWxqTjRIZUc1VmZqdExHNVRkWmhHdlFYNnRYb0hxRDczRTlLUlBaOEFvcV95VWpwYXBLZnpORzVJNGxZbktYRFdwVG94UHBKZjlWLWdKRW0tdlY4Z21QQXdobkk5UDdZUlZzRVVYSlEiLCJlIjoiQVFBQiJ9#0",
       "type": "JsonWebKey",
-      "controller": "did:jwk:eyJrdHkiOiJSU0EiLCJhbGciOiJSUzI1NiIsIm4iOiJwZ2VURm5scHNsbGVkYVAxNFRBeU5ucGF0Ql80Vkh4MUpsbnM5cjVNZ3dKYjVOQmRmNDZnVjJyVWtYblUwS2ZPMzZWbWNORlM2aEFRU0tiejZkYlAyU1luRzlYdm1kdkF1Zkg2NDJYY0xEMWo5UlphTGNOOGtZQUxZZWpYc0l6Ri1yZFNMMFRYQmM5ZzJXSWN4bmVKQTBCdXpTUzhPSDJXZ3FVMjRVV3JTNEpzWVl3Y2NWN2ZROG1leTVSay04cGRUTDFsWWY1UTduOGdvaDYycUVvbGdPMHM4OXBsSlpTUXZQWG9zUXBaakJ1bDJGOUY2NXZ6ZzJrV3hYNktVU3R6WFBwN045Tnd1QzlSeXNWSmlIN2lFTTdYMEd3QXdaSm5iTU5YZ25XYldaYlFNMi1Jb2JVMEhGbGNBdnBoOTJBVlNScjVsdWhhZWtwdEVnRU5fUUNYOHciLCJlIjoiQVFBQiJ9",
+      "controller": "did:jwk:eyJrdHkiOiJSU0EiLCJhbGciOiJSUzI1NiIsIm4iOiJwMjc0Z0JIZVVqa1pMekNwTURMYzJLYXFrcTdGYnIwWWV4TXAzWjRrSFA1NGV4MFRxQUFjNEdrSWlCUjVPOGpxNTFzUDd5b08wRW9wTFJhT21BY0dPTFlXSlg5QkFKUG1IN016dGJ5UEEzU3ZzdzBfZVJTM3JFd0pPa1JISXRRUmpkOFU4eWNnNDVnNHRGZkFmUWdneGczb2FhS3M2am1aUXJfclM0VHU4QnNCVXNkbEJYb1FQOTRfRUxYM0RUQklaVXhOMFBSekVPaXZaZERpc2VrRVVWUUFMLVNqT3hlOGhSb2xXOERUYXBxMXRnZWxqTjRIZUc1VmZqdExHNVRkWmhHdlFYNnRYb0hxRDczRTlLUlBaOEFvcV95VWpwYXBLZnpORzVJNGxZbktYRFdwVG94UHBKZjlWLWdKRW0tdlY4Z21QQXdobkk5UDdZUlZzRVVYSlEiLCJlIjoiQVFBQiJ9",
       "publicKeyJwk": {
         "kty": "RSA",
         "alg": "RS256",
-        "n": "pgeTFnlpslledaP14TAyNnpatB_4VHx1Jlns9r5MgwJb5NBdf46gV2rUkXnU0KfO36VmcNFS6hAQSKbz6dbP2SYnG9XvmdvAufH642XcLD1j9RZaLcN8kYALYejXsIzF-rdSL0TXBc9g2WIcxneJA0BuzSS8OH2WgqU24UWrS4JsYYwccV7fQ8mey5Rk-8pdTL1lYf5Q7n8goh62qEolgO0s89plJZSQvPXosQpZjBul2F9F65vzg2kWxX6KUStzXPp7N9NwuC9RysVJiH7iEM7X0GwAwZJnbMNXgnWbWZbQM2-IobU0HFlcAvph92AVSRr5luhaekptEgEN_QCX8w",
+        "n": "p274gBHeUjkZLzCpMDLc2Kaqkq7Fbr0YexMp3Z4kHP54ex0TqAAc4GkIiBR5O8jq51sP7yoO0EopLRaOmAcGOLYWJX9BAJPmH7MztbyPA3Svsw0_eRS3rEwJOkRHItQRjd8U8ycg45g4tFfAfQggxg3oaaKs6jmZQr_rS4Tu8BsBUsdlBXoQP94_ELX3DTBIZUxN0PRzEOivZdDisekEUVQAL-SjOxe8hRolW8DTapq1tgeljN4HeG5VfjtLG5TdZhGvQX6tXoHqD73E9KRPZ8Aoq_yUjpapKfzNG5I4lYnKXDWpToxPpJf9V-gJEm-vV8gmPAwhnI9P7YRVsEUXJQ",
         "e": "AQAB"
       },
       "privateKeyJwk": {
         "kty": "RSA",
         "alg": "RS256",
-        "d": "Koe-Mf-gB8PE4rXBgpHqCvKE0adu4ZWQHObkQMC2sMil6ZNGoCpVAI-pLCrdTSXvZHLmLvgwGS1MPpAl4zzXuXSAiCzhV7RnRjqqXh31rI99T4cOSrLM8iiuwcH3no4xGOxk7R7hRee9k3IClQSB4Idc2sgSPxZMu-K-kC5cltbDytsJDdSGnKm5rCElspjGp9txfH1gj_dM6E0GbEyFTKgBXH-QCpQbOQeY-HckI7JQZqgE9ENjPSQysVMlz1SDWQDbPYihpBq_9G5hXkHq8OMr9nzzon_7puD1gUNktrGZWZwOkldjrtlt77akppBDwybkUHTIzgVxs1Vg3tqooQ",
-        "n": "pgeTFnlpslledaP14TAyNnpatB_4VHx1Jlns9r5MgwJb5NBdf46gV2rUkXnU0KfO36VmcNFS6hAQSKbz6dbP2SYnG9XvmdvAufH642XcLD1j9RZaLcN8kYALYejXsIzF-rdSL0TXBc9g2WIcxneJA0BuzSS8OH2WgqU24UWrS4JsYYwccV7fQ8mey5Rk-8pdTL1lYf5Q7n8goh62qEolgO0s89plJZSQvPXosQpZjBul2F9F65vzg2kWxX6KUStzXPp7N9NwuC9RysVJiH7iEM7X0GwAwZJnbMNXgnWbWZbQM2-IobU0HFlcAvph92AVSRr5luhaekptEgEN_QCX8w",
+        "d": "FqUvz06GCwk1n_LNEeZHMAw2qhkg6IMtzPOWEtHL4O9anI1zC6KxmnkfkhwcG4W8nlGW0Z-WxP11cpIy81qRMQQQ8b2zgnWpHGTQhnDRckO1bG-gbpVqlCSX45K5gPs9a-VIquxXX-ube79vRYSJvjps_TXnJ39mfFHYa-yM-S9Nyx6StgESEzI-vcY1x7_XVlflOsBzHqFtDbwXL0BDxTdW-kqacL96HDCqvkc2nRj0JRzxCHReTuYql8wtzo1jCaootwz5RZRd_gBin9L5l7FXPfxDcH9Vev8SxBBqxyS8vRTP6vIQ4zL6MO47OyNsTPrLYhnexJ-uPNYlXjNVrw",
+        "n": "p274gBHeUjkZLzCpMDLc2Kaqkq7Fbr0YexMp3Z4kHP54ex0TqAAc4GkIiBR5O8jq51sP7yoO0EopLRaOmAcGOLYWJX9BAJPmH7MztbyPA3Svsw0_eRS3rEwJOkRHItQRjd8U8ycg45g4tFfAfQggxg3oaaKs6jmZQr_rS4Tu8BsBUsdlBXoQP94_ELX3DTBIZUxN0PRzEOivZdDisekEUVQAL-SjOxe8hRolW8DTapq1tgeljN4HeG5VfjtLG5TdZhGvQX6tXoHqD73E9KRPZ8Aoq_yUjpapKfzNG5I4lYnKXDWpToxPpJf9V-gJEm-vV8gmPAwhnI9P7YRVsEUXJQ",
         "e": "AQAB",
-        "p": "uEx9-2im0p7peql9O-ghz6UBwbVQps7YMXP9Z24Ibf3UcYVgfwRZEM6j-o0oilOkqljTP27R59N4aIqvxb-_9F3aFG_Bfh8hzRMuzXKFdEffwfOuJpOEqLVcYAljj3KvQEFyCMxZGH5FjsGg8worloCwjt1i0DzFjPjyqFhebF0",
-        "q": "5p-Iq9j--x69hVUZ4J4U3PC2jmNRTPZcI9NmULt2VPxWL3Argsu2vr1MGukE7xQDRYhS8GcRyNPgF5uE6jnLV0Pdqw9_keh2rK6V-CRRu5KtIsSiXyjQWanaD2kTa1QsjEwuiY5kQB6zaovgp-DesxC3ZuRS9INydXcQppmpUI8",
-        "dp": "O5ENjvqOILkYAXtSbNBkTTap0LAHt0JXgfRZTNq1gsdtqJtRSvxexR3kxhBlr__E0wIOlQv-cA1bd36LvUByjErhN4W_ZkItrJisod6H38NzQL6_5Nv9HoIvryKZuT16Ayyj7NAPY-k8Fh3jJWp-GBDT__jx_RgHSb8UvvCA5Ek",
-        "dq": "fu0Mhi_eXY0Ul1436MR4DQU6I_GLXEU2fs0pQYN649khAejFOa4ufJmoWiMnAQHNryYRJ5hCVHovmi6Qn2yBehyy0iOsfTwonG9VwIUUqpxWR41bI-5NhRuTFOoqsuZXwjtnXXONvzBmZFxpn1uGlZy8o5dEBKiXhQirlFV7twc",
-        "qi": "SRRDSD38Nx2adDqp5dlkayq85RbNUoJKdugUE949QLsy8twguKHNszCaMVamNWvicfVm_2VGtWnRr6bvbkAOSLYkZRqbipJwsQomm3JLK6h1xs39KheaBHDVgVMeA3fsAyrJ2QJDwftAhpusTXMvLVC0nAGHQL-YYqMcdGD09g"
+        "p": "2Gow0TcDO4APa1UaarN9lBdH5MPEkKWWhrlO4_D2hISpNJc6fEW31M9NCgOfDM0fVW9sY27ELVqSRSlYBK_xkm9XzHJNebC--xaEY8xhis1kmGyCESf-unx-AYTX9RHnADAzJvldsQN5zNc4KlHXLBWj1_YOc_0jyjyvCP5gRhc",
+        "q": "xg8v7tQvJ5ynocqgmdWYho-XLv7heaKZP_2vOI9CHXHDupJgNEqjxpVKv2gdPpz-ayDjwYphVyG4iPrbSU6GTYwTaYVHerh94D9wOfu0HFSIsoaM_WwHnNF5pFlzTUY9B4zWi_xzAsXW-JiC9ukba2LI4Xwmk_xgVa4C0MsTziM",
+        "dp": "YGxv88efGROlyxzP-FqgySrWTYcsPYaJ2t0V2VmzfLfe7B-1X0lw7tCucpfKddmu7FII6QShQ9Pm-AnDvdLmv2f8posHGgE2Fomh0xVtIHsDJyaxjRNU26I8QlD-J6MiWWMgZ20T4Zq62hnKXJC6XloF9mMbbXKMT79Z_ZfZLWE",
+        "dq": "W4VxFN-f2qIdJDpJ9EwrayK3LdRBxL9KKbPEYFJyrsB_PZueMQu8mmsqW0B1IxXQyxgrpqeXS3gdmc6xvjI3BWaRIdWgrijKofEuntyc4ep-MGDUjdZ5vhFeMH_VNAQc93wxOAaz7rgVGlL_UbFuJjVDtk50VTXuHimGy4zL3hk",
+        "qi": "DYvHupg5yAosGna8HZ6_lNLhg5LrVPOSMDpT3obZw6Uek02QRVcuF_cLKB1-RD7DwdcvbfdGSE-Lc_zlAc2Ca9SLjUIYNRvKKuj2tDjMQhDrD5udZu4u53FXoS9dZbgxCuK3_2YyeQ_6oXO-ZJA-MpOdL8mNV1SZVvB8BQbNPio"
       }
     },
     "credential": {
@@ -432,17 +432,17 @@
       },
       "proof": {
         "type": "DataIntegrityProof",
-        "created": "2023-06-04T22:30:30.158Z",
+        "created": "2023-06-04T22:35:08.444Z",
         "cryptosuite": "di-sd-urdna2015-jose-2042",
         "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:MggqrOi2MEJR1qOeF8Q9gKRxUNB9vrjbwqogJ1Er8k8",
         "keys": [
           {
             "kid": "#disclosure",
             "kty": "OKP",
             "crv": "Ed25519",
             "alg": "EdDSA",
-            "x": "MuY0p483ssi6VUpJ0UGOLOSxX1WkE_niTNA_NxujJM0",
+            "x": "LJ3Hg9AxvtBvbaJbFdQVPqC0cNN16BAW2gI7x3j3ONI",
             "claimset_formats_supported": [
               "w3cvc-jsonld"
             ],
@@ -458,26 +458,26 @@
             "key_ops": [
               "sign"
             ],
-            "k": "Wov8MHAMTOe19Sut5SW4WIhn4CiYHvt6UBLRUXphgwM"
+            "k": "6ecVU3RkxsgqsrwnokiaJKrzKpSJ_7ZQM_-VzOWVJN8"
           },
           {
             "kid": "#mandatory",
             "kty": "oct",
-            "k": "PfdiDeKASoFqQZPRhOcIyOt29QEdGRuOKRYBZQ688FA"
+            "k": "R6PqMcxibm3QUtwoPSMXKbQo54d_vgyLaupafIYTUdI"
           },
           {
             "kid": "#proof",
             "kty": "oct",
-            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+            "k": "N3ZIo4DTV7KVVThNNMceBE9eQKWpoKkCBXdyseM2_ok"
           }
         ],
-        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i2uN5hg30piImDm4wBtbroKA_kb65hmvN0UkC011fMnfOaP8fwYwhbzkpx3WIyNeFjab5lVc6bhngDmv8Jr0CQ",
+        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..cx9pLJE11YOgZCKbkxDA37tNXOZUK2ddvVzEwMo9ww9RVuRkFtk3Iw8nXA_3VOz_QMQjPXVtHWPa5lSIejczCQ",
         "signatures": [
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iTjVivx71jIyfvtxDuSfzsolPnE24yIt6sObkbLNpJ9Da05rbvFpam_SGmJg88AvvZvrVNCsZyC7Lt1l3v3vDA",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..v7SzkV927X5gCHRITCBWFROcFk2bllzi3rRBWvkg4Xe6GcYcSen-mOL5uhAoW2l-lmds9VMu-y5n-nTSrug6Cw",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..36tuhC6QLr62hPze-8Ybb5HuZDbt4hz49ufl4R2JEVaOgXKeQ12xTLy3gHB5TcrpGllHbUbu7VhyrHn4GVNcDw",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..NK-_WVCVJrMVZXL9rDq7FmfcyPzhFZ14vwgYaN49DmKxNoXR5SiOxW9nMsWPKPMKYolO3A5V94YGxNVThEeoAA",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rn-UmsmkvaO6nI8coqrzHAQVbBCzRYVjLpyYc14DCZPHfhCvrse27tDNYFEhZlOPmwE3H6I6W7eEBUB7DGuvAQ"
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kt_z9lA_4SmmtFitSrE1VZCJovN_UF1K2o-s21DBuYfXt_Yd7ZMcgPIa2I9Ef4gaYF3nem0bp3C7PwOaARKkAw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..oMJxvfSvma7eufbb9Gflg9DNsOY1JS5MpDj6Hg51u1wdiQYpwJUv79KmDu7dqtGQleSlsQS8F0pSANIugMmqDg",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..c2M8BRhtuQ3hAzuw2Ck3ng0rPAQK6-Vjx9tldHHBuzjGlGIVDZF3mz8stHgF5BB8ozT1lMkPUuDt7kJoBMsnDQ",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..4x9cp01nPBdjuYShKgwrchWraETORU1ejxRN1j-_ClUI9zJ_151EickU5faGnlUJLh8MxP5_AD4Zu1mapqloCQ",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rSWBYRySybNRuAxBROwZKdl4xE8uVvZF828ga9Et2iAxPo4e5qZAb7dCfEAnI9otm1bm5_fFIsK46tg0cWfeBg"
         ]
       }
     },
@@ -500,16 +500,16 @@
       },
       "proof": {
         "type": "DataIntegrityProof",
-        "created": "2023-06-04T22:30:30.158Z",
+        "created": "2023-06-04T22:35:08.444Z",
         "cryptosuite": "di-sd-urdna2015-jose-2042",
         "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:MggqrOi2MEJR1qOeF8Q9gKRxUNB9vrjbwqogJ1Er8k8",
         "keys": [
           {
             "kid": "#disclosure",
             "kty": "RSA",
             "alg": "RS256",
-            "n": "mBtufnwO-WEdvhLEm4g1IIG9YYaFnt61_BVduaUPk5Pc8r6epAgP7HcYbnUqGz63gA__Ls6uzIEk3NCPczRk_pZGpX8IOo52ACpskAipQ-HU3-VJpNe5l0vuZHoNpxuFODOtbOP-gk1g_wk7H5CD6uupz6qoMsjje2PZ9YF8Uq8zOQ43aTtl0MXKBHJJeJbRniOG_l3ITrwphyP3DNHFfxKaZJxyep6RXNhXODxCFUNU3V7gRzxr7x96BRIr9FERn2ROwjPXa3b_PYHWkm3wXtwUyGXskvdb1DR20Vvfnwi4fj9FLKU1WNfOrQxdRfS2xA8Xb_X5KsNLS6L3K3ybnw",
+            "n": "5u-OGAvOKsb3rKTzkoOfDwy8_FuPqLOTrG_TOjuJZ0WYppqGic5G2kplmRrF545LkLDByPM0b-wqAyOXX9D4Wnw1MYYKu1HXBSKtNPS8EERcEugAOBaKIaxsnuqkRwvQuD3lr45r_wl5cmET0hykrlo0RbQraBtT0UNdZONMJhaRI_SgSTLIFif0xlYeWomCKD8lZxoL-SEhPdwFD3SGxEUAafMl2hnYVo5l5DMovHXbaTSSMnEp5vjKmGsQRgpfyoZ9cEcs_rMFkivXIDsKrr_Rwh8j-RYPZQ-RJ-1HZaXe_Xg9RNEO9dqGb-HPSqgIfp-dUVO8RS-Z0FIK5g43hw",
             "e": "AQAB",
             "claimset_formats_supported": [
               "w3cvc-jsonld"
@@ -526,27 +526,27 @@
             "key_ops": [
               "sign"
             ],
-            "k": "mDkx5pxFVEl3GOp8pTFDO8nTgwYjdG9G-zl8CS-tk1g"
+            "k": "qeujSHLj99wylx-FlJwkeQUj6g4lhQr2Feltutlm7FU"
           },
           {
             "kid": "#mandatory",
             "kty": "oct",
-            "k": "mEinjUL7-pUFqvErx6Z2uK6wpbWSRb8ddPVweqVQ1xg"
+            "k": "e4vcW7aOa50yivDnkvycfzstGJUAxT0hFxyFAlsVvdo"
           },
           {
             "kid": "#proof",
             "kty": "oct",
-            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+            "k": "N3ZIo4DTV7KVVThNNMceBE9eQKWpoKkCBXdyseM2_ok"
           }
         ],
-        "signature": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..pMfKPyOcrs1xLtL7bdIEdPQNHuZh4KK6DbtOBPK3GRJdihPEfFdznyf_qcjDE9VdH3NF0tdiXDxiISxFdCANMmgjuBKEuQIw9MsHi-fqcZ297bVs3pDSslq3ZCUehfdmnMyFR7P4fH8dF0LUV5cNz-jkPkGjthKXSze2VFkrzPoIeRmG2s0xgNl5htpJZzXn9V9u37iVn7PzhlqVqJgIraVorYq69mvrM9S6NnzdSfE8urUHZGPMm4ULqNeVepvMV6sH0AQiKd5u52X5lXbLOVBxYufN1zuCetqC_48Jym2MXLEa3A04Xad7eZq92HoKM8vNejGGlLTMk8byyk_4xw",
+        "signature": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..T2nJSHWOAaKQ1GIbrrkzQrfW_FyD-W-4laujZsBL4xHToDxAvOKNk5tXGH-XI9Bc86CjTHYPi_6CLZGplBAkJhMNp8LXnrICq9CwpQzMy-lwLxwbvudw_ZKtpzCx2NhcohhiV0HmURFmBw6xz7X3yE1t5_fwZWdGJKl116fEQuig1_gSKVA-3JmF4gH7r2_H7FPOcs0nCCdJYFNFtqfByWICdIt4tD7v2elBb6IpzjkCn-omzGaLhOjn95AyRiLuRMbbtb8VEitsJe0d64z0j39N3pAdNFouPyUFN7pAwmuwk0vHP70chMVIo1fRn7oA9RNOWIxkti2pHUkYIv9SKw",
         "signatures": [
-          "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Dz1q78CfSa7UqCbz9CHefpYhfM1Ou_emV2L0S3O3A_TBbVtFK0t4Ojqz7vDa2q7P3gRjP1lFceaIQ7sMygvqfDYSOgM8J74TqXvLmBsVxjQEszbQtTCTkLK05qQnxS47H_Yzp72YZ1pXWghI1cuRNh-3GHo4Xdj-O_Xo_LkkUvmvuQmEl7ATJv3ByVeEwFkh2R_61ivIKaioudVEoufatlI-rQepMBcu0PT8HE3xgjHJcbwM1x8b9WHNsMljw7qmUPLgW34Vp5tRkkJqHcmm5zTbTlO__7m4y-7Zq792P2fEYb6TXZ9ntznYqJhHNn-isb_03Ii3hAhyvzPn_Ei5gA"
+          "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..voZJEqTMuRweIyb8_au-pIBntu6S5yca-Esf4UtIgcA6R5ciygxT8yOWA3Q5rXUZLO-YH5AOTmPv7QRcDzbaOyOUyRNcRsdw7WYyuvPS4kwl8l0JxxmrsuIhSWPjNwOegCRkwhhxVSKo_ITyKvXw-Qjdd1phUEeu5lxiRm3x0mweOC5KpzLEejsGIrhuX6O1pUKlCtf5ns12vTgX-v2N48yclFP0hWHsdxRJMyBTifLqlDA0d1zUGqZhDczAcZiIltFgvj4EIHhm2UWovjnKNlAuYtqgzHc_3H41B-LBYW2CH9n5I4jczRt2CCOik_8u4WezuLaXon4--UJsURg3oQ"
         ],
         "labels": {
-          "c14n0": "uOPyS0dfuBBzps2qKaddMnXJ7pjE8pY9fOR-f79-Ogdk",
-          "c14n1": "uD8xoGmjXtVDtBncKtqqPNlB5vD5RH7nPzzzBlqx2dFU",
-          "c14n2": "uXhl0gAj0sddsZJ6d0-IHKaNWTFODrg6yqm5VV-UqK4Q"
+          "c14n0": "uJg9MLzMRpqwBsPedJCK5eL9lclSKB7bJApRJ1WYxxmc",
+          "c14n1": "uAmAeBEZCl5UQztXMFKbFnGNGH9Gs1DWhxugi_ngxPZw",
+          "c14n2": "uceHnwQlfEjc-GyNcM1DOgrqCOkzkwVCIfH6UZmUzskk"
         },
         "mandatoryIndexes": [
           "0",
@@ -582,23 +582,23 @@
   },
   "ES256K": {
     "controller": {
-      "id": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6InNlY3AyNTZrMSIsImFsZyI6IkVTMjU2SyIsIngiOiIyZ0s3aDlLSnB6bXRhelBCSEhwV0gxRWhETDhaOGZmNDZnNE1xUTNkVmpJIiwieSI6IlN0X2J4VFVmM1R4bUU5M0UzZTJZVW10b2ZPTTNkclNpbHpGek1GdmR5cXcifQ#0",
+      "id": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6InNlY3AyNTZrMSIsImFsZyI6IkVTMjU2SyIsIngiOiJobU9xRXRrakJSbGgyQ0VkR0RrNTVKSGZ5bE43dTF1NHU4VU9RcXFzYlRJIiwieSI6ImhJWGphcEpHQ0o3QVB3UVFpSHpPZ0JsX3BScjFORzNZRUVidDN6RGVnNjQifQ#0",
       "type": "JsonWebKey",
-      "controller": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6InNlY3AyNTZrMSIsImFsZyI6IkVTMjU2SyIsIngiOiIyZ0s3aDlLSnB6bXRhelBCSEhwV0gxRWhETDhaOGZmNDZnNE1xUTNkVmpJIiwieSI6IlN0X2J4VFVmM1R4bUU5M0UzZTJZVW10b2ZPTTNkclNpbHpGek1GdmR5cXcifQ",
+      "controller": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6InNlY3AyNTZrMSIsImFsZyI6IkVTMjU2SyIsIngiOiJobU9xRXRrakJSbGgyQ0VkR0RrNTVKSGZ5bE43dTF1NHU4VU9RcXFzYlRJIiwieSI6ImhJWGphcEpHQ0o3QVB3UVFpSHpPZ0JsX3BScjFORzNZRUVidDN6RGVnNjQifQ",
       "publicKeyJwk": {
         "kty": "EC",
         "crv": "secp256k1",
         "alg": "ES256K",
-        "x": "2gK7h9KJpzmtazPBHHpWH1EhDL8Z8ff46g4MqQ3dVjI",
-        "y": "St_bxTUf3TxmE93E3e2YUmtofOM3drSilzFzMFvdyqw"
+        "x": "hmOqEtkjBRlh2CEdGDk55JHfylN7u1u4u8UOQqqsbTI",
+        "y": "hIXjapJGCJ7APwQQiHzOgBl_pRr1NG3YEEbt3zDeg64"
       },
       "privateKeyJwk": {
         "kty": "EC",
         "crv": "secp256k1",
         "alg": "ES256K",
-        "x": "2gK7h9KJpzmtazPBHHpWH1EhDL8Z8ff46g4MqQ3dVjI",
-        "y": "St_bxTUf3TxmE93E3e2YUmtofOM3drSilzFzMFvdyqw",
-        "d": "ar92yOQO6lW566EDKy_J_pUi6Cm6rCQnqWWWCPTap74"
+        "x": "hmOqEtkjBRlh2CEdGDk55JHfylN7u1u4u8UOQqqsbTI",
+        "y": "hIXjapJGCJ7APwQQiHzOgBl_pRr1NG3YEEbt3zDeg64",
+        "d": "9B8Jbae1FXZUjGJtm8_9uM3xvz_SpziYfsRrf5-Frow"
       }
     },
     "credential": {
@@ -624,17 +624,17 @@
       },
       "proof": {
         "type": "DataIntegrityProof",
-        "created": "2023-06-04T22:30:30.158Z",
+        "created": "2023-06-04T22:35:08.444Z",
         "cryptosuite": "di-sd-urdna2015-jose-2042",
         "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:MggqrOi2MEJR1qOeF8Q9gKRxUNB9vrjbwqogJ1Er8k8",
         "keys": [
           {
             "kid": "#disclosure",
             "kty": "OKP",
             "crv": "Ed25519",
             "alg": "EdDSA",
-            "x": "MuY0p483ssi6VUpJ0UGOLOSxX1WkE_niTNA_NxujJM0",
+            "x": "LJ3Hg9AxvtBvbaJbFdQVPqC0cNN16BAW2gI7x3j3ONI",
             "claimset_formats_supported": [
               "w3cvc-jsonld"
             ],
@@ -650,26 +650,26 @@
             "key_ops": [
               "sign"
             ],
-            "k": "Wov8MHAMTOe19Sut5SW4WIhn4CiYHvt6UBLRUXphgwM"
+            "k": "6ecVU3RkxsgqsrwnokiaJKrzKpSJ_7ZQM_-VzOWVJN8"
           },
           {
             "kid": "#mandatory",
             "kty": "oct",
-            "k": "PfdiDeKASoFqQZPRhOcIyOt29QEdGRuOKRYBZQ688FA"
+            "k": "R6PqMcxibm3QUtwoPSMXKbQo54d_vgyLaupafIYTUdI"
           },
           {
             "kid": "#proof",
             "kty": "oct",
-            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+            "k": "N3ZIo4DTV7KVVThNNMceBE9eQKWpoKkCBXdyseM2_ok"
           }
         ],
-        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i2uN5hg30piImDm4wBtbroKA_kb65hmvN0UkC011fMnfOaP8fwYwhbzkpx3WIyNeFjab5lVc6bhngDmv8Jr0CQ",
+        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..cx9pLJE11YOgZCKbkxDA37tNXOZUK2ddvVzEwMo9ww9RVuRkFtk3Iw8nXA_3VOz_QMQjPXVtHWPa5lSIejczCQ",
         "signatures": [
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iTjVivx71jIyfvtxDuSfzsolPnE24yIt6sObkbLNpJ9Da05rbvFpam_SGmJg88AvvZvrVNCsZyC7Lt1l3v3vDA",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..v7SzkV927X5gCHRITCBWFROcFk2bllzi3rRBWvkg4Xe6GcYcSen-mOL5uhAoW2l-lmds9VMu-y5n-nTSrug6Cw",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..36tuhC6QLr62hPze-8Ybb5HuZDbt4hz49ufl4R2JEVaOgXKeQ12xTLy3gHB5TcrpGllHbUbu7VhyrHn4GVNcDw",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..NK-_WVCVJrMVZXL9rDq7FmfcyPzhFZ14vwgYaN49DmKxNoXR5SiOxW9nMsWPKPMKYolO3A5V94YGxNVThEeoAA",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rn-UmsmkvaO6nI8coqrzHAQVbBCzRYVjLpyYc14DCZPHfhCvrse27tDNYFEhZlOPmwE3H6I6W7eEBUB7DGuvAQ"
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kt_z9lA_4SmmtFitSrE1VZCJovN_UF1K2o-s21DBuYfXt_Yd7ZMcgPIa2I9Ef4gaYF3nem0bp3C7PwOaARKkAw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..oMJxvfSvma7eufbb9Gflg9DNsOY1JS5MpDj6Hg51u1wdiQYpwJUv79KmDu7dqtGQleSlsQS8F0pSANIugMmqDg",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..c2M8BRhtuQ3hAzuw2Ck3ng0rPAQK6-Vjx9tldHHBuzjGlGIVDZF3mz8stHgF5BB8ozT1lMkPUuDt7kJoBMsnDQ",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..4x9cp01nPBdjuYShKgwrchWraETORU1ejxRN1j-_ClUI9zJ_151EickU5faGnlUJLh8MxP5_AD4Zu1mapqloCQ",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rSWBYRySybNRuAxBROwZKdl4xE8uVvZF828ga9Et2iAxPo4e5qZAb7dCfEAnI9otm1bm5_fFIsK46tg0cWfeBg"
         ]
       }
     },
@@ -692,18 +692,18 @@
       },
       "proof": {
         "type": "DataIntegrityProof",
-        "created": "2023-06-04T22:30:30.158Z",
+        "created": "2023-06-04T22:35:08.444Z",
         "cryptosuite": "di-sd-urdna2015-jose-2042",
         "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:MggqrOi2MEJR1qOeF8Q9gKRxUNB9vrjbwqogJ1Er8k8",
         "keys": [
           {
             "kid": "#disclosure",
             "kty": "EC",
             "crv": "secp256k1",
             "alg": "ES256K",
-            "x": "lSq2HlIK5iO_QszBHmH_22RHvJXg7yOaWnxI3ZNDRuU",
-            "y": "fFRkopZVwusP4f4GpoeYUj1Cmzyl13IaJfek5RedNS8",
+            "x": "iBqN3VBgNMsmXO8__gIjUFR5kKL7TZPzL2EzzrdwwL0",
+            "y": "Yil3wIACuUntVN5dPb4_EP3ghP9WnPPu6S2OCbypSIg",
             "claimset_formats_supported": [
               "w3cvc-jsonld"
             ],
@@ -719,34 +719,34 @@
             "key_ops": [
               "sign"
             ],
-            "k": "b5ZOZwS44-NkIIWbp9e6Zlpof4Yb8dc5FdOxo0GSfaI"
+            "k": "mUBDOY1ia6d3Hlg89qhR1XgZHGtMDty4AogLkTwM7kk"
           },
           {
             "kid": "#mandatory",
             "kty": "oct",
-            "k": "HTS3_Nk8-lQlgqZ_LURH0ovhI0MsskQKe7h_4d-o6Hw"
+            "k": "lU2N3hheWdm_llvsagBcstFqsU9ZDjL6s0bTg98jsoo"
           },
           {
             "kid": "#proof",
             "kty": "oct",
-            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+            "k": "N3ZIo4DTV7KVVThNNMceBE9eQKWpoKkCBXdyseM2_ok"
           }
         ],
-        "signature": "eyJhbGciOiJFUzI1NksiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdfQ..5zjBhg4EUaQD3Zefa7-mvp-9zO9b3dmTK1Rcl4C183LDRN1Ugb-rT8RoDYYpAEnY44XPELpXs0p9Z7itD2dpLQ",
+        "signature": "eyJhbGciOiJFUzI1NksiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdfQ..k0XZ5MtFKPyGFLXZJhy0QCdS7FPcyvZCMNtlMqy7hNzt74r8JGLBu0mcOAt0ZnMNlrHTDwPs48iWzxp72kRAIw",
         "signatures": [
-          "eyJhbGciOiJFUzI1NksiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdfQ..-0NX7i12Rj19kuYP_Jy1QnERQsHGlTd353v_flgCWtsRg8vM34DgeLC-3JbkrvrHVZwO7LW9YvdnOSQ_y3RI8w"
+          "eyJhbGciOiJFUzI1NksiLCJiNjQiOmZhbHNlLCJjcml0IjpbImI2NCJdfQ..wjKTa2lHdwY4WX8mIH5E3fz6uVUhurVUGHgMkGdzrKCdjLdeRuSz-pTaLYNZ6L6qtiMGFb9A4cZEW7H8JVzQyA"
         ],
         "labels": {
-          "c14n0": "u7XJa2nY9OQpBAtyvUMnL1EeN0tqchlBpP4j9z7UHv_A",
-          "c14n1": "udv7STKmt2WgAjemyEV6gvZArusFhR-OxiCedGRvxup0",
-          "c14n2": "uJR5AUVJma-3PnoPyDs4p-mKmKJBc2F9fKlIW3Ev60cM"
+          "c14n0": "uh2C_6-ex0gEBu5vr6c1RmYIGSUTHq_Fa32J748f00DI",
+          "c14n1": "uj6S9LUxdROe5QarydZb3H89t6OiKZb8udmSCgJu0Hy0",
+          "c14n2": "uw-aZA-0wwSbl9PKpxugJo_SanAgigkF5v-b3aqzs_V8"
         },
         "mandatoryIndexes": [
           "0",
           "1",
+          "2",
           "3",
           "4",
-          "5",
           "6"
         ]
       }
@@ -775,21 +775,21 @@
   },
   "EdDSA": {
     "controller": {
-      "id": "did:jwk:eyJrdHkiOiJPS1AiLCJjcnYiOiJFZDI1NTE5IiwiYWxnIjoiRWREU0EiLCJ4IjoicEREY2MySXZqcVI4Mmo2X3BXUGxWbTk4Rndrd2pKeUFQWVlKR2NNdVlldyJ9#0",
+      "id": "did:jwk:eyJrdHkiOiJPS1AiLCJjcnYiOiJFZDI1NTE5IiwiYWxnIjoiRWREU0EiLCJ4IjoicjAxX2VkT2l1WVFyS0pjTjU1T3dRcnZuTWlWMldXUXJwSHZjSXJ1eUFaVSJ9#0",
       "type": "JsonWebKey",
-      "controller": "did:jwk:eyJrdHkiOiJPS1AiLCJjcnYiOiJFZDI1NTE5IiwiYWxnIjoiRWREU0EiLCJ4IjoicEREY2MySXZqcVI4Mmo2X3BXUGxWbTk4Rndrd2pKeUFQWVlKR2NNdVlldyJ9",
+      "controller": "did:jwk:eyJrdHkiOiJPS1AiLCJjcnYiOiJFZDI1NTE5IiwiYWxnIjoiRWREU0EiLCJ4IjoicjAxX2VkT2l1WVFyS0pjTjU1T3dRcnZuTWlWMldXUXJwSHZjSXJ1eUFaVSJ9",
       "publicKeyJwk": {
         "kty": "OKP",
         "crv": "Ed25519",
         "alg": "EdDSA",
-        "x": "pDDcc2IvjqR82j6_pWPlVm98FwkwjJyAPYYJGcMuYew"
+        "x": "r01_edOiuYQrKJcN55OwQrvnMiV2WWQrpHvcIruyAZU"
       },
       "privateKeyJwk": {
         "kty": "OKP",
         "crv": "Ed25519",
         "alg": "EdDSA",
-        "x": "pDDcc2IvjqR82j6_pWPlVm98FwkwjJyAPYYJGcMuYew",
-        "d": "Q_0aSerdY9LpvY-vej4z9V05M4VJEkOdoLujoUFizQ0"
+        "x": "r01_edOiuYQrKJcN55OwQrvnMiV2WWQrpHvcIruyAZU",
+        "d": "IjXC0D0RMnScAVE_AN0pqzIq-qSA2Tp5IJ7ws_sKpoI"
       }
     },
     "credential": {
@@ -815,17 +815,17 @@
       },
       "proof": {
         "type": "DataIntegrityProof",
-        "created": "2023-06-04T22:30:30.158Z",
+        "created": "2023-06-04T22:35:08.444Z",
         "cryptosuite": "di-sd-urdna2015-jose-2042",
         "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:MggqrOi2MEJR1qOeF8Q9gKRxUNB9vrjbwqogJ1Er8k8",
         "keys": [
           {
             "kid": "#disclosure",
             "kty": "OKP",
             "crv": "Ed25519",
             "alg": "EdDSA",
-            "x": "MuY0p483ssi6VUpJ0UGOLOSxX1WkE_niTNA_NxujJM0",
+            "x": "LJ3Hg9AxvtBvbaJbFdQVPqC0cNN16BAW2gI7x3j3ONI",
             "claimset_formats_supported": [
               "w3cvc-jsonld"
             ],
@@ -841,26 +841,26 @@
             "key_ops": [
               "sign"
             ],
-            "k": "Wov8MHAMTOe19Sut5SW4WIhn4CiYHvt6UBLRUXphgwM"
+            "k": "6ecVU3RkxsgqsrwnokiaJKrzKpSJ_7ZQM_-VzOWVJN8"
           },
           {
             "kid": "#mandatory",
             "kty": "oct",
-            "k": "PfdiDeKASoFqQZPRhOcIyOt29QEdGRuOKRYBZQ688FA"
+            "k": "R6PqMcxibm3QUtwoPSMXKbQo54d_vgyLaupafIYTUdI"
           },
           {
             "kid": "#proof",
             "kty": "oct",
-            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+            "k": "N3ZIo4DTV7KVVThNNMceBE9eQKWpoKkCBXdyseM2_ok"
           }
         ],
-        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i2uN5hg30piImDm4wBtbroKA_kb65hmvN0UkC011fMnfOaP8fwYwhbzkpx3WIyNeFjab5lVc6bhngDmv8Jr0CQ",
+        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..cx9pLJE11YOgZCKbkxDA37tNXOZUK2ddvVzEwMo9ww9RVuRkFtk3Iw8nXA_3VOz_QMQjPXVtHWPa5lSIejczCQ",
         "signatures": [
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iTjVivx71jIyfvtxDuSfzsolPnE24yIt6sObkbLNpJ9Da05rbvFpam_SGmJg88AvvZvrVNCsZyC7Lt1l3v3vDA",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..v7SzkV927X5gCHRITCBWFROcFk2bllzi3rRBWvkg4Xe6GcYcSen-mOL5uhAoW2l-lmds9VMu-y5n-nTSrug6Cw",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..36tuhC6QLr62hPze-8Ybb5HuZDbt4hz49ufl4R2JEVaOgXKeQ12xTLy3gHB5TcrpGllHbUbu7VhyrHn4GVNcDw",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..NK-_WVCVJrMVZXL9rDq7FmfcyPzhFZ14vwgYaN49DmKxNoXR5SiOxW9nMsWPKPMKYolO3A5V94YGxNVThEeoAA",
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rn-UmsmkvaO6nI8coqrzHAQVbBCzRYVjLpyYc14DCZPHfhCvrse27tDNYFEhZlOPmwE3H6I6W7eEBUB7DGuvAQ"
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kt_z9lA_4SmmtFitSrE1VZCJovN_UF1K2o-s21DBuYfXt_Yd7ZMcgPIa2I9Ef4gaYF3nem0bp3C7PwOaARKkAw",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..oMJxvfSvma7eufbb9Gflg9DNsOY1JS5MpDj6Hg51u1wdiQYpwJUv79KmDu7dqtGQleSlsQS8F0pSANIugMmqDg",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..c2M8BRhtuQ3hAzuw2Ck3ng0rPAQK6-Vjx9tldHHBuzjGlGIVDZF3mz8stHgF5BB8ozT1lMkPUuDt7kJoBMsnDQ",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..4x9cp01nPBdjuYShKgwrchWraETORU1ejxRN1j-_ClUI9zJ_151EickU5faGnlUJLh8MxP5_AD4Zu1mapqloCQ",
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rSWBYRySybNRuAxBROwZKdl4xE8uVvZF828ga9Et2iAxPo4e5qZAb7dCfEAnI9otm1bm5_fFIsK46tg0cWfeBg"
         ]
       }
     },
@@ -883,17 +883,17 @@
       },
       "proof": {
         "type": "DataIntegrityProof",
-        "created": "2023-06-04T22:30:30.158Z",
+        "created": "2023-06-04T22:35:08.444Z",
         "cryptosuite": "di-sd-urdna2015-jose-2042",
         "proofPurpose": "assertionMethod",
-        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:bihRI4PZ9RzxD5qA3R5zcmcVEuLopLkTBBrROL82vr4",
+        "verificationMethod": "did:web:txdmv.gov#urn:ietf:params:oauth:jwk-thumbprint:sha-256:MggqrOi2MEJR1qOeF8Q9gKRxUNB9vrjbwqogJ1Er8k8",
         "keys": [
           {
             "kid": "#disclosure",
             "kty": "OKP",
             "crv": "Ed25519",
             "alg": "EdDSA",
-            "x": "MuY0p483ssi6VUpJ0UGOLOSxX1WkE_niTNA_NxujJM0",
+            "x": "LJ3Hg9AxvtBvbaJbFdQVPqC0cNN16BAW2gI7x3j3ONI",
             "claimset_formats_supported": [
               "w3cvc-jsonld"
             ],
@@ -909,31 +909,31 @@
             "key_ops": [
               "sign"
             ],
-            "k": "Wov8MHAMTOe19Sut5SW4WIhn4CiYHvt6UBLRUXphgwM"
+            "k": "6ecVU3RkxsgqsrwnokiaJKrzKpSJ_7ZQM_-VzOWVJN8"
           },
           {
             "kid": "#mandatory",
             "kty": "oct",
-            "k": "PfdiDeKASoFqQZPRhOcIyOt29QEdGRuOKRYBZQ688FA"
+            "k": "R6PqMcxibm3QUtwoPSMXKbQo54d_vgyLaupafIYTUdI"
           },
           {
             "kid": "#proof",
             "kty": "oct",
-            "k": "1dYD9valx00dQr9IuXB41ZixyB5XDeD9MTe4Of6NdnQ"
+            "k": "N3ZIo4DTV7KVVThNNMceBE9eQKWpoKkCBXdyseM2_ok"
           }
         ],
-        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..i2uN5hg30piImDm4wBtbroKA_kb65hmvN0UkC011fMnfOaP8fwYwhbzkpx3WIyNeFjab5lVc6bhngDmv8Jr0CQ",
+        "signature": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..cx9pLJE11YOgZCKbkxDA37tNXOZUK2ddvVzEwMo9ww9RVuRkFtk3Iw8nXA_3VOz_QMQjPXVtHWPa5lSIejczCQ",
         "signatures": [
-          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..iTjVivx71jIyfvtxDuSfzsolPnE24yIt6sObkbLNpJ9Da05rbvFpam_SGmJg88AvvZvrVNCsZyC7Lt1l3v3vDA"
+          "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..kt_z9lA_4SmmtFitSrE1VZCJovN_UF1K2o-s21DBuYfXt_Yd7ZMcgPIa2I9Ef4gaYF3nem0bp3C7PwOaARKkAw"
         ],
         "labels": {
-          "c14n0": "uJ_EmFAOB748gyOMn3LnnT6BHALukXvoa3fJkzpjxNCQ",
-          "c14n1": "uqanpf6f8qnyEF0nQdvR1K3R6Cf1sg0PsphxwgNmVKTs",
-          "c14n2": "uFcK4vxnkZ1JDW5e8TPY4Xd2u4Gi2wd7yn0GyZBZXkY8"
+          "c14n0": "u0LXGNvz6K7ezRK0D105WQCp-5UKGdqIgpAzGCXahseQ",
+          "c14n1": "u1cqsvx7nAFbUfv1JGsYaYwL22Y4rwB6X-_pQm-OyZ6s",
+          "c14n2": "u0TAxbGB5FQuFU7oA-kaosQWkkozClvWj4oNZNaA0p50"
         },
         "mandatoryIndexes": [
           "0",
-          "2",
+          "1",
           "3",
           "4",
           "5",
